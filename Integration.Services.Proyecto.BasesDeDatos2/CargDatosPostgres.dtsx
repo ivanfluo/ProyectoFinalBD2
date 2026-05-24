@@ -1,0 +1,1596 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/23/2026 6:25:17 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="IVANPC"
+  DTS:CreatorName="IVANPC\Salvador Hernández"
+  DTS:DTSID="{D939EA53-32B3-4414-9907-43E2F1481683}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1016.0"
+  DTS:LocaleID="4106"
+  DTS:ObjectName="CargDatosPostgres"
+  DTS:PackageType="5"
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{5FC3DC61-064F-41B9-B31D-0ACF49AE61D9}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[IVANPC.PROYECTO_BD2.sa]"
+      DTS:CreationName="ADO.NET:Microsoft.Data.SqlClient.SqlConnection, Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5"
+      DTS:DTSID="{25AD95EF-ECC3-416C-B2FD-A984F52D2D96}"
+      DTS:ObjectName="IVANPC.PROYECTO_BD2.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=IVANPC;User ID=sa;Initial Catalog=PROYECTO_BD2;Persist Security Info=True;Trust Server Certificate=True;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABid0cZzVkVKb2f7a3kW0d5zHv/lkORjzIyg8oO6Hn8xwAAAAAOgAAAAAIAACAAAACt1yZVzWl5OhoPcv1ZPuXdzagGwUHtINLPyrCvwu3k3hAAAAD38AchfTa9i9V37TH8RoaAQAAAAHtPytFideMjY7OxVSNF75aIEaajhihb/L+ZvXT0cKNKvbvTN27iDxbziATzdjqn6/chADOuYoDYDg2XgYGuwPA</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.PROYECTO_BD2.postgres]"
+      DTS:CreationName="ADO.NET:System.Data.Odbc.OdbcConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{F82D1582-9300-40BE-8167-3E9F48513889}"
+      DTS:ObjectName="localhost.PROYECTO_BD2.postgres">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="server=localhost;uid=postgres;Dsn=PostgreSQL;database=PROYECTO_BD2;port=5432;sslmode=disable;readonly=0;protocol=7.4;fakeoidindex=0;showoidcolumn=0;rowversioning=0;showsystemtables=0;fetch=100;unknownsizes=0;maxvarcharsize=255;maxlongvarcharsize=8190;debug=0;commlog=0;usedeclarefetch=0;textaslongvarchar=1;unknownsaslongvarchar=0;boolsaschar=1;parse=0;lfconversion=1;updatablecursors=1;trueisminus1=0;bi=0;byteaaslongvarbinary=1;useserversideprepare=1;lowercaseidentifier=0;d6=-101;optionalerrors=0;fetchrefcursors=0;xaopt=1;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAI+BAhqWHHoL9eDyICr/hjcR/G9zK3UfQAmAz5OnYWfwAAAAAOgAAAAAIAACAAAAAuIhjVciQjqZrdZCF5RR4ULlb1tAJsORvIntIn/xEiOBAAAAB4SZMAGtskWMGPiO6hgeRKQAAAAAOb48NvpNCpNQRp6KL7E+fmXEB18TsEAR/WWJUoumY9X5dkHzsh6ebrvcIvwA72l6erGrbOYPBWA/eZK5hV0Wc</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{A81DB31E-2379-4273-90B3-C77779E46234}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Data Conversion 2"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion 2"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Data Conversion 2.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion 2.Inputs[Data Conversion Input].Columns[ID_ASIGNACION]"
+                      cachedDataType="i4"
+                      cachedName="ID_ASIGNACION"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_ASIGNACION]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion 2.Inputs[Data Conversion Input].Columns[ID_ESTUDIANTE]"
+                      cachedDataType="i4"
+                      cachedName="ID_ESTUDIANTE"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_ESTUDIANTE]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion 2.Inputs[Data Conversion Input].Columns[ID_HORARIO]"
+                      cachedDataType="i4"
+                      cachedName="ID_HORARIO"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_HORARIO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion 2.Inputs[Data Conversion Input].Columns[FECHA_ASIGNACION]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="FECHA_ASIGNACION"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[FECHA_ASIGNACION]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion 2.Inputs[Data Conversion Input].Columns[ID_ESTADO_ASIGNACION]"
+                      cachedDataType="i4"
+                      cachedName="ID_ESTADO_ASIGNACION"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_ESTADO_ASIGNACION]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion 2.Inputs[Data Conversion Input].Columns[ESTADO]"
+                      cachedDataType="bool"
+                      cachedName="ESTADO"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ESTADO]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Data Flow Task\Data Conversion 2.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[ID_ASIGNACION_NORMALIZADO]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[ID_ASIGNACION_NORMALIZADO]"
+                      name="ID_ASIGNACION_NORMALIZADO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_ASIGNACION]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[ID_ESTUDIANTE_NORMALIZADO]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[ID_ESTUDIANTE_NORMALIZADO]"
+                      name="ID_ESTUDIANTE_NORMALIZADO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_ESTUDIANTE]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[ID_HORARIO_NORMALIZADO]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[ID_HORARIO_NORMALIZADO]"
+                      name="ID_HORARIO_NORMALIZADO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_HORARIO]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[FECHA_ASIGNACION_NORMALIZADO]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[FECHA_ASIGNACION_NORMALIZADO]"
+                      name="FECHA_ASIGNACION_NORMALIZADO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[FECHA_ASIGNACION]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[ID_ESTADO_ASIGNACION_NORMALIZADO]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[ID_ESTADO_ASIGNACION_NORMALIZADO]"
+                      name="ID_ESTADO_ASIGNACION_NORMALIZADO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_ESTADO_ASIGNACION]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[ESTADO_NORMALIZADO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="5"
+                      lineageId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[ESTADO_NORMALIZADO]"
+                      name="ESTADO_NORMALIZADO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ESTADO]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Data Flow Task\Data Conversion 2.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
+              name="POSTGRESQL_ASIGANCIONES"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de destino."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"pagos_schema"."asignaciones"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si se debe usar la interfaz SqlBulkCopy para mejorar el rendimiento de las operaciones de inserción masiva. No todos los proveedores admiten esta interfaz."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.PROYECTO_BD2.postgres]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.PROYECTO_BD2.postgres]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].Columns[ESTADO_NORMALIZADO]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="ESTADO_NORMALIZADO"
+                      externalMetadataColumnId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[estado]"
+                      lineageId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[ESTADO_NORMALIZADO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].Columns[ID_ESTADO_ASIGNACION_NORMALIZADO]"
+                      cachedDataType="i4"
+                      cachedName="ID_ESTADO_ASIGNACION_NORMALIZADO"
+                      externalMetadataColumnId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_estado_asignacion]"
+                      lineageId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[ID_ESTADO_ASIGNACION_NORMALIZADO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].Columns[FECHA_ASIGNACION_NORMALIZADO]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="FECHA_ASIGNACION_NORMALIZADO"
+                      externalMetadataColumnId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[fecha_asignacion]"
+                      lineageId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[FECHA_ASIGNACION_NORMALIZADO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].Columns[ID_HORARIO_NORMALIZADO]"
+                      cachedDataType="i4"
+                      cachedName="ID_HORARIO_NORMALIZADO"
+                      externalMetadataColumnId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_horario]"
+                      lineageId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[ID_HORARIO_NORMALIZADO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].Columns[ID_ESTUDIANTE_NORMALIZADO]"
+                      cachedDataType="i4"
+                      cachedName="ID_ESTUDIANTE_NORMALIZADO"
+                      externalMetadataColumnId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_estudiante]"
+                      lineageId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[ID_ESTUDIANTE_NORMALIZADO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].Columns[ID_ASIGNACION_NORMALIZADO]"
+                      cachedDataType="i4"
+                      cachedName="ID_ASIGNACION_NORMALIZADO"
+                      externalMetadataColumnId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_asignacion]"
+                      lineageId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output].Columns[ID_ASIGNACION_NORMALIZADO]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_asignacion]"
+                      dataType="i4"
+                      name="id_asignacion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_estudiante]"
+                      dataType="i4"
+                      name="id_estudiante" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_horario]"
+                      dataType="i4"
+                      name="id_horario" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_sede]"
+                      dataType="i4"
+                      name="id_sede" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[fecha_asignacion]"
+                      dataType="dbTimeStamp"
+                      name="fecha_asignacion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_estado_asignacion]"
+                      dataType="i4"
+                      name="id_estado_asignacion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[estado]"
+                      dataType="wstr"
+                      length="5"
+                      name="estado" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[fecha_sinc]"
+                      dataType="dbTimeStamp"
+                      name="fecha_sinc" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Outputs[Salida de error de destino de ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de ADO NET"
+                  synchronousInputId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
+              name="SQLSERVER_ASIGNACIONES"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si se debe permitir que columnas externas que no sean de cadenas se conviertan implícitamente en cadenas en las columnas de salida."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de origen."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."ASIGNACIONES"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especificar el modo de recuperar información de columnas externas"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">0</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[IVANPC.PROYECTO_BD2.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[IVANPC.PROYECTO_BD2.sa]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET]"
+                  name="Salida de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_ASIGNACION]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[ID_ASIGNACION]"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_ASIGNACION]"
+                      name="ID_ASIGNACION"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_ESTUDIANTE]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[ID_ESTUDIANTE]"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_ESTUDIANTE]"
+                      name="ID_ESTUDIANTE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_HORARIO]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[ID_HORARIO]"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_HORARIO]"
+                      name="ID_HORARIO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[FECHA_ASIGNACION]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[FECHA_ASIGNACION]"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[FECHA_ASIGNACION]"
+                      name="FECHA_ASIGNACION"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_ESTADO_ASIGNACION]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[ID_ESTADO_ASIGNACION]"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_ESTADO_ASIGNACION]"
+                      name="ID_ESTADO_ASIGNACION"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[FECHA_RETIRO]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[FECHA_RETIRO]"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[FECHA_RETIRO]"
+                      name="FECHA_RETIRO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[MOTIVO_RETIRO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[MOTIVO_RETIRO]"
+                      length="250"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[MOTIVO_RETIRO]"
+                      name="MOTIVO_RETIRO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[FECHA_CIERRE]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[FECHA_CIERRE]"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[FECHA_CIERRE]"
+                      name="FECHA_CIERRE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[NOTA_FINAL]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[NOTA_FINAL]"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[NOTA_FINAL]"
+                      name="NOTA_FINAL"
+                      precision="5"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ESTADO]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[ESTADO]"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ESTADO]"
+                      name="ESTADO"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[ID_ASIGNACION]"
+                      dataType="i4"
+                      name="ID_ASIGNACION" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[ID_ESTUDIANTE]"
+                      dataType="i4"
+                      name="ID_ESTUDIANTE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[ID_HORARIO]"
+                      dataType="i4"
+                      name="ID_HORARIO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[FECHA_ASIGNACION]"
+                      dataType="dbTimeStamp"
+                      name="FECHA_ASIGNACION" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[ID_ESTADO_ASIGNACION]"
+                      dataType="i4"
+                      name="ID_ESTADO_ASIGNACION" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[FECHA_RETIRO]"
+                      dataType="dbTimeStamp"
+                      name="FECHA_RETIRO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[MOTIVO_RETIRO]"
+                      dataType="wstr"
+                      length="250"
+                      name="MOTIVO_RETIRO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[FECHA_CIERRE]"
+                      dataType="dbTimeStamp"
+                      name="FECHA_CIERRE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[NOTA_FINAL]"
+                      dataType="numeric"
+                      name="NOTA_FINAL"
+                      precision="5"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[ESTADO]"
+                      dataType="bool"
+                      name="ESTADO" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ID_ASIGNACION]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ID_ASIGNACION]"
+                      name="ID_ASIGNACION" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ID_ESTUDIANTE]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ID_ESTUDIANTE]"
+                      name="ID_ESTUDIANTE" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ID_HORARIO]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ID_HORARIO]"
+                      name="ID_HORARIO" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[FECHA_ASIGNACION]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[FECHA_ASIGNACION]"
+                      name="FECHA_ASIGNACION" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ID_ESTADO_ASIGNACION]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ID_ESTADO_ASIGNACION]"
+                      name="ID_ESTADO_ASIGNACION" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[FECHA_RETIRO]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[FECHA_RETIRO]"
+                      name="FECHA_RETIRO" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[MOTIVO_RETIRO]"
+                      dataType="wstr"
+                      length="250"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[MOTIVO_RETIRO]"
+                      name="MOTIVO_RETIRO" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[FECHA_CIERRE]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[FECHA_CIERRE]"
+                      name="FECHA_CIERRE" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[NOTA_FINAL]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[NOTA_FINAL]"
+                      name="NOTA_FINAL"
+                      precision="5"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ESTADO]"
+                      dataType="bool"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ESTADO]"
+                      name="ESTADO" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Data Conversion Output]"
+              endId="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES.Inputs[Entrada de destino de ADO NET]"
+              name="Data Conversion Output"
+              startId="Package\Data Flow Task\Data Conversion 2.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Salida de origen de ADO NET]"
+              endId="Package\Data Flow Task\Data Conversion 2.Inputs[Data Conversion Input]"
+              name="Salida de origen de ADO NET"
+              startId="Package\Data Flow Task\SQLSERVER_ASIGNACIONES.Outputs[Salida de origen de ADO NET]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task 1"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{8F3D85F8-1951-42FB-B2A9-2BA505423EF0}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task 1"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task 1\Data Conversion 1"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input].Columns[ID_ESTADO_ASIGNACION]"
+                      cachedDataType="i4"
+                      cachedName="ID_ESTADO_ASIGNACION"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_ESTADO_ASIGNACION]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input].Columns[CODIGO]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="CODIGO"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[CODIGO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input].Columns[NOMBRE]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="NOMBRE"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[NOMBRE]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input].Columns[DESCRIPCION]"
+                      cachedDataType="wstr"
+                      cachedLength="250"
+                      cachedName="DESCRIPCION"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[DESCRIPCION]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input].Columns[CUENTA_COMO_DESERCION]"
+                      cachedDataType="bool"
+                      cachedName="CUENTA_COMO_DESERCION"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[CUENTA_COMO_DESERCION]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input].Columns[AFECTA_PROMEDIO]"
+                      cachedDataType="bool"
+                      cachedName="AFECTA_PROMEDIO"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[AFECTA_PROMEDIO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input].Columns[GENERA_COBRO]"
+                      cachedDataType="bool"
+                      cachedName="GENERA_COBRO"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[GENERA_COBRO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input].Columns[ESTADO]"
+                      cachedDataType="bool"
+                      cachedName="ESTADO"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ESTADO]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[ID_ESTADO_ASIGNACION_NORMALIZADO]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[ID_ESTADO_ASIGNACION_NORMALIZADO]"
+                      name="ID_ESTADO_ASIGNACION_NORMALIZADO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_ESTADO_ASIGNACION]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[CODIGO_NORMALIZADO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="40"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[CODIGO_NORMALIZADO]"
+                      name="CODIGO_NORMALIZADO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[CODIGO]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[NOMBRE_NORMALIZADO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="200"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[NOMBRE_NORMALIZADO]"
+                      name="NOMBRE_NORMALIZADO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[NOMBRE]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[DESCRIPCION_NORMALIZADO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[DESCRIPCION_NORMALIZADO]"
+                      name="DESCRIPCION_NORMALIZADO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[DESCRIPCION]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[CUENTA_COMO_DESERCION_NORMALIZADO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="5"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[CUENTA_COMO_DESERCION_NORMALIZADO]"
+                      name="CUENTA_COMO_DESERCION_NORMALIZADO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[CUENTA_COMO_DESERCION]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[AFECTA_PROMEDIO_NORMALIZADO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="5"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[AFECTA_PROMEDIO_NORMALIZADO]"
+                      name="AFECTA_PROMEDIO_NORMALIZADO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[AFECTA_PROMEDIO]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[GENERA_COBRO_NORMALIZADO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="5"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[GENERA_COBRO_NORMALIZADO]"
+                      name="GENERA_COBRO_NORMALIZADO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[GENERA_COBRO]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[ESTADO_NORMALIZADO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="5"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[ESTADO_NORMALIZADO]"
+                      name="ESTADO_NORMALIZADO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ESTADO]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
+              name="POSTGRESQL_ESTADO_ASIGNACIONES"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de destino."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"pagos_schema"."estados_asignacion"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si se debe usar la interfaz SqlBulkCopy para mejorar el rendimiento de las operaciones de inserción masiva. No todos los proveedores admiten esta interfaz."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.PROYECTO_BD2.postgres]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.PROYECTO_BD2.postgres]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].Columns[ID_ESTADO_ASIGNACION_NORMALIZADO]"
+                      cachedDataType="i4"
+                      cachedName="ID_ESTADO_ASIGNACION_NORMALIZADO"
+                      externalMetadataColumnId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_estado_asignacion]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[ID_ESTADO_ASIGNACION_NORMALIZADO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].Columns[CODIGO_NORMALIZADO]"
+                      cachedDataType="wstr"
+                      cachedLength="40"
+                      cachedName="CODIGO_NORMALIZADO"
+                      externalMetadataColumnId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[codigo]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[CODIGO_NORMALIZADO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].Columns[NOMBRE_NORMALIZADO]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="NOMBRE_NORMALIZADO"
+                      externalMetadataColumnId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[NOMBRE_NORMALIZADO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].Columns[DESCRIPCION_NORMALIZADO]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="DESCRIPCION_NORMALIZADO"
+                      externalMetadataColumnId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[descripcion]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[DESCRIPCION_NORMALIZADO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].Columns[CUENTA_COMO_DESERCION_NORMALIZADO]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="CUENTA_COMO_DESERCION_NORMALIZADO"
+                      externalMetadataColumnId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[cuenta_como_desercion]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[CUENTA_COMO_DESERCION_NORMALIZADO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].Columns[AFECTA_PROMEDIO_NORMALIZADO]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="AFECTA_PROMEDIO_NORMALIZADO"
+                      externalMetadataColumnId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[afecta_promedio]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[AFECTA_PROMEDIO_NORMALIZADO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].Columns[GENERA_COBRO_NORMALIZADO]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="GENERA_COBRO_NORMALIZADO"
+                      externalMetadataColumnId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[genera_cobro]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[GENERA_COBRO_NORMALIZADO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].Columns[ESTADO_NORMALIZADO]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="ESTADO_NORMALIZADO"
+                      externalMetadataColumnId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[estado]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[ESTADO_NORMALIZADO]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_estado_asignacion]"
+                      dataType="i4"
+                      name="id_estado_asignacion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[codigo]"
+                      dataType="wstr"
+                      length="40"
+                      name="codigo" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
+                      dataType="wstr"
+                      length="200"
+                      name="nombre" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[descripcion]"
+                      dataType="wstr"
+                      length="255"
+                      name="descripcion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[cuenta_como_desercion]"
+                      dataType="wstr"
+                      length="5"
+                      name="cuenta_como_desercion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[afecta_promedio]"
+                      dataType="wstr"
+                      length="5"
+                      name="afecta_promedio" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[genera_cobro]"
+                      dataType="wstr"
+                      length="5"
+                      name="genera_cobro" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET].ExternalColumns[estado]"
+                      dataType="wstr"
+                      length="5"
+                      name="estado" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Outputs[Salida de error de destino de ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de ADO NET"
+                  synchronousInputId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
+              name="SQLSERVER_ESTADO_ASIGNACIONES"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si se debe permitir que columnas externas que no sean de cadenas se conviertan implícitamente en cadenas en las columnas de salida."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de origen."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."ESTADOS_ASIGNACION"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especificar el modo de recuperar información de columnas externas"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">0</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[IVANPC.PROYECTO_BD2.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[IVANPC.PROYECTO_BD2.sa]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET]"
+                  name="Salida de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_ESTADO_ASIGNACION]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[ID_ESTADO_ASIGNACION]"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ID_ESTADO_ASIGNACION]"
+                      name="ID_ESTADO_ASIGNACION"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[CODIGO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[CODIGO]"
+                      length="20"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[CODIGO]"
+                      name="CODIGO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[NOMBRE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[NOMBRE]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[NOMBRE]"
+                      name="NOMBRE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[DESCRIPCION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[DESCRIPCION]"
+                      length="250"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[DESCRIPCION]"
+                      name="DESCRIPCION"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[CUENTA_COMO_DESERCION]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[CUENTA_COMO_DESERCION]"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[CUENTA_COMO_DESERCION]"
+                      name="CUENTA_COMO_DESERCION"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[AFECTA_PROMEDIO]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[AFECTA_PROMEDIO]"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[AFECTA_PROMEDIO]"
+                      name="AFECTA_PROMEDIO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[GENERA_COBRO]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[GENERA_COBRO]"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[GENERA_COBRO]"
+                      name="GENERA_COBRO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ESTADO]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[ESTADO]"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].Columns[ESTADO]"
+                      name="ESTADO"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[ID_ESTADO_ASIGNACION]"
+                      dataType="i4"
+                      name="ID_ESTADO_ASIGNACION" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[CODIGO]"
+                      dataType="wstr"
+                      length="20"
+                      name="CODIGO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[NOMBRE]"
+                      dataType="wstr"
+                      length="100"
+                      name="NOMBRE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[DESCRIPCION]"
+                      dataType="wstr"
+                      length="250"
+                      name="DESCRIPCION" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[CUENTA_COMO_DESERCION]"
+                      dataType="bool"
+                      name="CUENTA_COMO_DESERCION" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[AFECTA_PROMEDIO]"
+                      dataType="bool"
+                      name="AFECTA_PROMEDIO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[GENERA_COBRO]"
+                      dataType="bool"
+                      name="GENERA_COBRO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET].ExternalColumns[ESTADO]"
+                      dataType="bool"
+                      name="ESTADO" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ID_ESTADO_ASIGNACION]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ID_ESTADO_ASIGNACION]"
+                      name="ID_ESTADO_ASIGNACION" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[CODIGO]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[CODIGO]"
+                      name="CODIGO" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[NOMBRE]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[NOMBRE]"
+                      name="NOMBRE" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[DESCRIPCION]"
+                      dataType="wstr"
+                      length="250"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[DESCRIPCION]"
+                      name="DESCRIPCION" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[CUENTA_COMO_DESERCION]"
+                      dataType="bool"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[CUENTA_COMO_DESERCION]"
+                      name="CUENTA_COMO_DESERCION" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[AFECTA_PROMEDIO]"
+                      dataType="bool"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[AFECTA_PROMEDIO]"
+                      name="AFECTA_PROMEDIO" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[GENERA_COBRO]"
+                      dataType="bool"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[GENERA_COBRO]"
+                      name="GENERA_COBRO" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ESTADO]"
+                      dataType="bool"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ESTADO]"
+                      name="ESTADO" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task 1.Paths[Data Conversion Output]"
+              endId="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES.Inputs[Entrada de destino de ADO NET]"
+              name="Data Conversion Output"
+              startId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[Salida de origen de ADO NET]"
+              endId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input]"
+              name="Salida de origen de ADO NET"
+              startId="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES.Outputs[Salida de origen de ADO NET]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{D3E05199-E59F-426C-9B75-624A41A16E23}"
+      DTS:From="Package\Data Flow Task 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Data Flow Task" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task"
+          TopLeft="222,294" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Data Flow Task 1"
+          TopLeft="223,126" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="300.25,168">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,126"
+              Start="0,0"
+              End="0,118.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,118.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="215,42"
+          Id="Package\Data Flow Task\SQLSERVER_ASIGNACIONES"
+          TopLeft="728,87" />
+        <NodeLayout
+          Size="223,42"
+          Id="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES"
+          TopLeft="736,340" />
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Data Flow Task\Data Conversion 2"
+          TopLeft="758,188" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Salida de origen de ADO NET]"
+          TopLeft="838,129">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59"
+              Start="0,0"
+              End="0,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Data Conversion Output]"
+          TopLeft="844,230">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,110"
+              Start="0,0"
+              End="0,102.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,102.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\SQLSERVER_ASIGNACIONES">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\POSTGRESQL_ASIGANCIONES">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Data Flow Task 1">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="268,42"
+          Id="Package\Data Flow Task 1\POSTGRESQL_ESTADO_ASIGNACIONES"
+          TopLeft="60,307" />
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Data Flow Task 1\Data Conversion 1"
+          TopLeft="111,167" />
+        <NodeLayout
+          Size="260,42"
+          Id="Package\Data Flow Task 1\SQLSERVER_ESTADO_ASIGNACIONES"
+          TopLeft="65,60" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Salida de origen de ADO NET]"
+          TopLeft="194.25,102">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,65"
+              Start="0,0"
+              End="0,57.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Data Conversion Output]"
+          TopLeft="193.75,209">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,98"
+              Start="0,0"
+              End="0,90.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,90.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
