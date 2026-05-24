@@ -1,0 +1,511 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5f6449dc-1500-4f2b-80b3-e55eb9a46154" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Cub_Pagos</ID>
+  <Name>Cub_Pagos</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="28" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4980" scrolltop="2043" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="32120" y="18627" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_METODO_PAGO" left="9732" top="18130" logicalid="14" controlid="1" masterid="0" hint1="0" hint2="0" width="3942" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000660f00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_UMG_DIM_METODO_PAGO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_ESTUDIANTE" left="6680" top="0" logicalid="15" controlid="2" masterid="0" hint1="0" hint2="0" width="4180" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00005410000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_UMG_DIM_ESTUDIANTE" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_TIEMPO" left="13260" top="11312" logicalid="16" controlid="3" masterid="0" hint1="0" hint2="0" width="3466" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008a0d000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_UMG_DIM_TIEMPO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_PERIODO" left="4104" top="18130" logicalid="17" controlid="4" masterid="0" hint1="0" hint2="0" width="3228" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00009c0c00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_UMG_DIM_PERIODO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_CURSO" left="13260" top="4070" logicalid="18" controlid="5" masterid="0" hint1="0" hint2="0" width="4101" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e000005100000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_UMG_DIM_CURSO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FACT_PAGOS" left="6918" top="7400" logicalid="19" controlid="6" masterid="0" hint1="0" hint2="0" width="3942" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000660f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_UMG_FACT_PAGOS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_CATEDRATICO" left="20" top="7690" logicalid="20" controlid="7" masterid="0" hint1="0" hint2="0" width="4498" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00009211000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_UMG_DIM_CATEDRATICO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9139" top="12100" logicalid="21" controlid="8" masterid="0" hint1="0" hint2="0" width="2964" height="6530" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FP_METODO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="6" sourceattachpoint="6" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11703" y="18130" />
+              <point x="11703" y="15265" />
+              <point x="9439" y="15265" />
+              <point x="9439" y="12400" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8371" top="4501" logicalid="22" controlid="9" masterid="0" hint1="0" hint2="0" width="818" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FP_ESTUDIANTE]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="6" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8770" y="5000" />
+              <point x="8770" y="6200" />
+              <point x="8889" y="6200" />
+              <point x="8889" y="7400" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="10560" top="10150" logicalid="23" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="3771" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FP_TIEMPO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="6" sourceattachpoint="16" destattachpoint="25" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13260" y="13521" />
+              <point x="12060" y="13521" />
+              <point x="12060" y="10450" />
+              <point x="10860" y="10450" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="5319" top="12100" logicalid="24" controlid="11" masterid="0" hint1="0" hint2="0" width="2770" height="6530" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FP_PERIODO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="6" sourceattachpoint="4" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5718" y="18130" />
+              <point x="5718" y="15265" />
+              <point x="7789" y="15265" />
+              <point x="7789" y="12400" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="10560" top="6092" logicalid="25" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="3008" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FP_CURSO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="6" sourceattachpoint="22" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13260" y="6491" />
+              <point x="12060" y="6491" />
+              <point x="12060" y="8800" />
+              <point x="10860" y="8800" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4218" top="9500" logicalid="26" controlid="13" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FP_CATEDRATICO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="6" sourceattachpoint="21" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4518" y="9899" />
+              <point x="5718" y="9899" />
+              <point x="5718" y="9900" />
+              <point x="6918" y="9900" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4980</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>2043</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="b8ebd4d0-819d-4814-9104-97c949ec28a8">
+      <ID>DIM CURSO 3</ID>
+      <Name>DIM CURSO 3</Name>
+      <DimensionID>DIM CURSO 3</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e9e9f85d-0190-48ba-944c-f5fb3c5a07e6">
+          <AttributeID>SK CURSO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b7a53765-b8e4-4a6b-8430-30929ab2bba8">
+          <AttributeID>CODIGO CURSO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ece4b191-9907-4278-8375-dae161f9492f">
+          <AttributeID>NOMBRE CURSO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="458ede22-53fa-4c0e-8fa4-f71949f60519">
+      <ID>DIM CATEDRATICO 3</ID>
+      <Name>DIM CATEDRATICO 3</Name>
+      <DimensionID>DIM CATEDRATICO 3</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="177653cf-f7b2-44a6-a988-7ad9e5f553a4">
+          <AttributeID>SK CATEDRATICO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3713a7e8-2b5a-413f-959f-63576a9e486f">
+          <AttributeID>CODIGO CATEDRATICO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9f42b267-d91a-414c-a4f0-9c1c3e3c954a">
+          <AttributeID>NOMBRE COMPLETO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e4d33d1e-af88-4e2c-8bf3-cf1d37f4fe89">
+      <ID>DIM METODO PAGO</ID>
+      <Name>DIM METODO PAGO</Name>
+      <DimensionID>DIM METODO PAGO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a3973712-c4fe-47e4-940c-40f282c59e8e">
+          <AttributeID>SK METODO PAGO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="eb699622-f6f4-4c1a-8e09-b1eb69f5431d">
+          <AttributeID>CODIGO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a826709f-6705-4851-b990-8cfb598fc5ac">
+          <AttributeID>NOMBRE</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7acaf932-7e57-4d47-95fa-686530edb422">
+      <ID>DIM PERIODO 3</ID>
+      <Name>DIM PERIODO 3</Name>
+      <DimensionID>DIM PERIODO 3</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="473b51af-7f06-4c26-aac8-56d99c185796">
+          <AttributeID>SK PERIODO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="af61e4e3-3226-4be9-b8fa-34fffb3da9fb">
+          <AttributeID>ANIO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="816e7b82-e2a2-49b2-ad99-aae674159d38">
+          <AttributeID>SEMESTRE</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b232eb8a-943a-436f-96cb-d36b0f5a12d0">
+      <ID>DIM ESTUDIANTE 3</ID>
+      <Name>DIM ESTUDIANTE 3</Name>
+      <DimensionID>DIM ESTUDIANTE 3</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b50ae877-16d2-4321-bdc5-71e643bf0f5c">
+          <AttributeID>SK ESTUDIANTE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8e64b881-e309-423b-8cf3-c83c75e75119">
+          <AttributeID>CARNET</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a0d7a699-cdb8-44a0-a1df-21c2dd8238a5">
+          <AttributeID>NOMBRE COMPLETO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="feeebffd-8b12-4a0f-878b-d3ab0d5be2b6">
+      <ID>DIM TIEMPO 3</ID>
+      <Name>DIM TIEMPO 3</Name>
+      <DimensionID>DIM TIEMPO 3</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="91d8951b-0c64-4c9c-a965-5708c4383350">
+          <AttributeID>SK TIEMPO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="da59ad61-383b-4a6c-ba0b-bb6137cefe32">
+      <ID>FACT PAGOS</ID>
+      <Name>FACT PAGOS</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="f9c1cd5c-9740-4cc7-a1b3-9425e8f25206">
+          <ID>MONTO PAGADO</ID>
+          <Name>MONTO PAGADO</Name>
+          <Source dwd:design-time-name="ff383f08-2fa8-4776-b90a-3a37225b9b3e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1cede26a-aa1d-47bc-82c5-24ac61f6140e">
+              <TableID>DW_UMG_FACT_PAGOS</TableID>
+              <ColumnID>MONTO_PAGADO</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2536e5c2-e1e4-4cb4-82fa-26034eced0ac">
+          <ID>CANT PAGOS</ID>
+          <Name>CANT PAGOS</Name>
+          <Source dwd:design-time-name="9d60b247-2cc5-4f7e-862c-8bbe8e410605">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d1b75757-7d7b-46e7-85f0-9a7a3a243876">
+              <TableID>DW_UMG_FACT_PAGOS</TableID>
+              <ColumnID>CANT_PAGOS</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="60f6931d-c101-41e7-8c34-c545a4406540">
+          <ID>Recuento FACT PAGOS</ID>
+          <Name>Recuento FACT PAGOS</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="0199b80b-add9-4892-821d-aae89c9a24d9">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="b0f81951-b886-486b-81e2-33c52709d264">
+              <TableID>DW_UMG_FACT_PAGOS</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="187a3994-916b-403e-be96-c65862b3a013">
+          <CubeDimensionID>DIM CURSO 3</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0935d907-da59-4338-9a68-d2b0374738c1">
+              <AttributeID>SK CURSO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9cc334a4-a7ff-454a-8b43-0935db46e848">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="50e4aa02-8f3b-4479-8d4a-56ca0c5c6483">
+                    <TableID>DW_UMG_FACT_PAGOS</TableID>
+                    <ColumnID>SK_CURSO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a7a4379f-b0be-4099-be3d-b052f317f665">
+          <CubeDimensionID>DIM CATEDRATICO 3</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="29e702c7-bcf1-4d63-922f-9cf4ac799f9b">
+              <AttributeID>SK CATEDRATICO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4a56f133-094c-4281-93d7-006a5405f2b4">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="403827c6-2c6a-4096-8090-787b2ddc4282">
+                    <TableID>DW_UMG_FACT_PAGOS</TableID>
+                    <ColumnID>SK_CATEDRATICO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="736d5831-76d5-4375-a263-5c431b5283ed">
+          <CubeDimensionID>DIM METODO PAGO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fdd5610c-f25d-4c62-ac3f-86b1a38d2f9b">
+              <AttributeID>SK METODO PAGO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7f7f0bc8-35eb-431f-a101-6386273dfb09">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b6c85464-05aa-42ab-a9bd-a30a044a9b48">
+                    <TableID>DW_UMG_FACT_PAGOS</TableID>
+                    <ColumnID>SK_METODO_PAGO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="30024cb8-f8ba-4b9e-91a2-3e50997f97ce">
+          <CubeDimensionID>DIM PERIODO 3</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f8814282-ad05-4919-95ad-f0d2b3a26246">
+              <AttributeID>SK PERIODO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="76c0d6ab-6074-4bd5-8eae-73de55d8f78a">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c48503d2-3175-4da2-92eb-8a2ccf746361">
+                    <TableID>DW_UMG_FACT_PAGOS</TableID>
+                    <ColumnID>SK_PERIODO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0437b33b-f548-4366-aa34-f181bc812cc1">
+          <CubeDimensionID>DIM TIEMPO 3</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="76beec50-dc8f-483f-b4de-bf0578730e85">
+              <AttributeID>SK TIEMPO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="80a9f427-51d2-43fe-aaf9-5d364eb47592">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9e60a556-b0c8-4d56-addc-35c9a37254be">
+                    <TableID>DW_UMG_FACT_PAGOS</TableID>
+                    <ColumnID>SK_TIEMPO_PAGO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0941e71c-c41d-4a80-9290-85ae61acca9f">
+          <CubeDimensionID>DIM ESTUDIANTE 3</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="415b94b2-5e15-419a-86cc-c6cacfa96ee6">
+              <AttributeID>SK ESTUDIANTE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c47919b3-ce6a-4157-b912-0077c8f5db3f">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d127db9d-0ab2-4da4-a862-f614e2a1253e">
+                    <TableID>DW_UMG_FACT_PAGOS</TableID>
+                    <ColumnID>SK_ESTUDIANTE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="b2ab51eb-7c66-40c9-815f-2f14a8e99a4b">
+    <DataSourceViewID>Vista_Pagos</DataSourceViewID>
+  </Source>
+</Cube>

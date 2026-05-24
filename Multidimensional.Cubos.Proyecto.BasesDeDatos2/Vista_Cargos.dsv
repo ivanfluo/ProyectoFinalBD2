@@ -1,0 +1,363 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a59f7cf1-e8fb-449d-8081-958d9304d3e0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Vista_Cargos</ID>
+  <Name>Vista_Cargos</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>xe</DataSourceID>
+  <Schema>
+    <xs:schema id="Vista_Cargos" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Vista_Cargos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="f4466ebf-e2d5-49e9-bc51-a5fb4bd9d116">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="DW_UMG_FACT_CARGOS" msprop:DbTableName="FACT_CARGOS" msprop:FriendlyName="FACT_CARGOS" msprop:TableType="Table" msprop:DbSchemaName="DW_UMG" msprop:design-time-name="46037bd6-f1c5-474f-8e4c-0e961229d771">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_CARGO" msprop:FriendlyName="ID_CARGO" msprop:DbColumnName="ID_CARGO" msprop:design-time-name="b85fc192-5bc4-4224-b149-b591d8cc747b" type="xs:long" />
+                  <xs:element name="ID_ASIGNACION" msprop:FriendlyName="ID_ASIGNACION" msprop:DbColumnName="ID_ASIGNACION" msprop:design-time-name="27ec7d67-60ae-49f7-b152-612a4cdb3b51" type="xs:long" minOccurs="0" />
+                  <xs:element name="SK_TIEMPO_CARGO" msprop:FriendlyName="SK_TIEMPO_CARGO" msprop:DbColumnName="SK_TIEMPO_CARGO" msprop:design-time-name="11a9c314-4627-4704-84f6-41346aaba671" type="xs:long" />
+                  <xs:element name="SK_TIEMPO_VENC" msprop:FriendlyName="SK_TIEMPO_VENC" msprop:DbColumnName="SK_TIEMPO_VENC" msprop:design-time-name="60f75d51-5f0e-4c1b-9d5f-5ec035c5787d" type="xs:long" />
+                  <xs:element name="SK_ESTUDIANTE" msprop:FriendlyName="SK_ESTUDIANTE" msprop:DbColumnName="SK_ESTUDIANTE" msprop:design-time-name="929f29f3-aa70-4815-aba9-a3b519fac7c0" type="xs:long" />
+                  <xs:element name="SK_CURSO" msprop:FriendlyName="SK_CURSO" msprop:DbColumnName="SK_CURSO" msprop:design-time-name="365d549a-a662-4b28-97fe-c4374c5fc161" type="xs:long" />
+                  <xs:element name="SK_CATEDRATICO" msprop:FriendlyName="SK_CATEDRATICO" msprop:DbColumnName="SK_CATEDRATICO" msprop:design-time-name="9672d58a-22e1-4314-9a0f-aeae0291a7b5" type="xs:long" />
+                  <xs:element name="SK_PERIODO" msprop:FriendlyName="SK_PERIODO" msprop:DbColumnName="SK_PERIODO" msprop:design-time-name="278608bc-bf32-4018-8f25-68c56421bce1" type="xs:long" />
+                  <xs:element name="SK_TIPO_CARGO" msprop:FriendlyName="SK_TIPO_CARGO" msprop:DbColumnName="SK_TIPO_CARGO" msprop:design-time-name="1b388cc0-8cdf-453f-99b0-f8a2fce9b151" type="xs:long" />
+                  <xs:element name="SK_EVALUACION" msprop:FriendlyName="SK_EVALUACION" msprop:DbColumnName="SK_EVALUACION" msprop:design-time-name="ac94f47e-d028-42d3-bfc3-939538845e2c" type="xs:long" minOccurs="0" />
+                  <xs:element name="MONTO" msprop:FriendlyName="MONTO" msprop:DbColumnName="MONTO" msprop:design-time-name="0c2ec0d7-dd29-45d2-b433-3f12286529c4" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="SALDO" msprop:FriendlyName="SALDO" msprop:DbColumnName="SALDO" msprop:design-time-name="a92a831d-f5ae-4de2-8e49-0104572fc356" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="CANT_CARGOS" msprop:FriendlyName="CANT_CARGOS" msprop:DbColumnName="CANT_CARGOS" msprop:design-time-name="31103d12-1fa9-4319-9a2f-a0a1a65779d8" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_UMG_DIM_CATEDRATICO" msprop:DbTableName="DIM_CATEDRATICO" msprop:FriendlyName="DIM_CATEDRATICO" msprop:TableType="Table" msprop:DbSchemaName="DW_UMG" msprop:design-time-name="db8bf4a4-a59d-477b-b5b9-269614dce246">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_CATEDRATICO" msprop:FriendlyName="SK_CATEDRATICO" msprop:DbColumnName="SK_CATEDRATICO" msprop:design-time-name="050a03ad-783d-4dae-b9b2-6d4b15fdb51b" type="xs:long" />
+                  <xs:element name="ID_CATEDRATICO" msprop:FriendlyName="ID_CATEDRATICO" msprop:DbColumnName="ID_CATEDRATICO" msprop:design-time-name="e22e6a13-853f-452b-ac42-1e9b8abf9fe4" type="xs:long" minOccurs="0" />
+                  <xs:element name="CODIGO_CATEDRATICO" msprop:FriendlyName="CODIGO_CATEDRATICO" msprop:DbColumnName="CODIGO_CATEDRATICO" msprop:design-time-name="220e87c8-e2c0-4583-ad2f-16fa35289d76" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOMBRE_COMPLETO" msprop:FriendlyName="NOMBRE_COMPLETO" msprop:DbColumnName="NOMBRE_COMPLETO" msprop:design-time-name="85bd2110-aa77-4ae6-aaab-24c064e92d93" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="250" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EMAIL" msprop:FriendlyName="EMAIL" msprop:DbColumnName="EMAIL" msprop:design-time-name="f8000963-0edc-4a57-9d02-ea39c4ed4083" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID_FACULTAD" msprop:FriendlyName="ID_FACULTAD" msprop:DbColumnName="ID_FACULTAD" msprop:design-time-name="9aa8880f-0336-4ed5-9cf2-b36ecdc2a08f" type="xs:long" minOccurs="0" />
+                  <xs:element name="NOMBRE_FACULTAD" msprop:FriendlyName="NOMBRE_FACULTAD" msprop:DbColumnName="NOMBRE_FACULTAD" msprop:design-time-name="b4a5a36b-d69b-4450-b049-7cc52355d2a5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ESTADO" msprop:FriendlyName="ESTADO" msprop:DbColumnName="ESTADO" msprop:design-time-name="5f984526-43dc-4b13-886d-6163ea7052b9" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_UMG_DIM_CURSO" msprop:DbTableName="DIM_CURSO" msprop:FriendlyName="DIM_CURSO" msprop:TableType="Table" msprop:DbSchemaName="DW_UMG" msprop:design-time-name="75e0354b-c03f-4f2a-a12b-c23fe83d10a4">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_CURSO" msprop:FriendlyName="SK_CURSO" msprop:DbColumnName="SK_CURSO" msprop:design-time-name="6b3629bb-559c-4c5a-94af-3ab2b7b9aecb" type="xs:long" />
+                  <xs:element name="ID_CURSO" msprop:FriendlyName="ID_CURSO" msprop:DbColumnName="ID_CURSO" msprop:design-time-name="fcf573b6-8811-4f2f-8d95-4710020eabea" type="xs:long" minOccurs="0" />
+                  <xs:element name="CODIGO_CURSO" msprop:FriendlyName="CODIGO_CURSO" msprop:DbColumnName="CODIGO_CURSO" msprop:design-time-name="f4568954-8261-4391-a265-baa2a795f300" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOMBRE_CURSO" msprop:FriendlyName="NOMBRE_CURSO" msprop:DbColumnName="NOMBRE_CURSO" msprop:design-time-name="59d88fe4-bb24-4d15-8e32-945b3ba89420" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CREDITOS" msprop:FriendlyName="CREDITOS" msprop:DbColumnName="CREDITOS" msprop:design-time-name="5a3f17d8-4257-4a00-b719-a8e2ddec8105" type="xs:long" minOccurs="0" />
+                  <xs:element name="ID_FACULTAD" msprop:FriendlyName="ID_FACULTAD" msprop:DbColumnName="ID_FACULTAD" msprop:design-time-name="36fdabca-34ad-49fd-866f-7d270feccf1e" type="xs:long" minOccurs="0" />
+                  <xs:element name="NOMBRE_FACULTAD" msprop:FriendlyName="NOMBRE_FACULTAD" msprop:DbColumnName="NOMBRE_FACULTAD" msprop:design-time-name="06ba66e4-04a9-4a8b-9be0-a15d3927484d" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AREA_FACULTAD" msprop:FriendlyName="AREA_FACULTAD" msprop:DbColumnName="AREA_FACULTAD" msprop:design-time-name="f4c19ae5-ca9a-4234-8d82-c486ee30880b" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ESTADO" msprop:FriendlyName="ESTADO" msprop:DbColumnName="ESTADO" msprop:design-time-name="c403ffd4-8a93-4a4c-bdcf-6a393f15b7ea" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_UMG_DIM_ESTUDIANTE" msprop:DbTableName="DIM_ESTUDIANTE" msprop:FriendlyName="DIM_ESTUDIANTE" msprop:TableType="Table" msprop:DbSchemaName="DW_UMG" msprop:design-time-name="2ed62fa8-cefe-49df-b36b-abccdbb10249">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_ESTUDIANTE" msprop:FriendlyName="SK_ESTUDIANTE" msprop:DbColumnName="SK_ESTUDIANTE" msprop:design-time-name="bfb85fde-1ed1-4da1-9313-f230db978ba2" type="xs:long" />
+                  <xs:element name="ID_ESTUDIANTE" msprop:FriendlyName="ID_ESTUDIANTE" msprop:DbColumnName="ID_ESTUDIANTE" msprop:design-time-name="b62ced63-6e5c-4e60-9482-02b97abb110d" type="xs:long" minOccurs="0" />
+                  <xs:element name="CARNET" msprop:FriendlyName="CARNET" msprop:DbColumnName="CARNET" msprop:design-time-name="6672877b-2167-459d-83eb-56fb5542d62b" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOMBRE_COMPLETO" msprop:FriendlyName="NOMBRE_COMPLETO" msprop:DbColumnName="NOMBRE_COMPLETO" msprop:design-time-name="e8b740f9-7eb2-4385-955f-03a76ee8a4ef" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="250" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EMAIL" msprop:FriendlyName="EMAIL" msprop:DbColumnName="EMAIL" msprop:design-time-name="3da549c3-1ca6-4e1d-9d89-7046b221f7dc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TELEFONO" msprop:FriendlyName="TELEFONO" msprop:DbColumnName="TELEFONO" msprop:design-time-name="61590845-245a-491f-9750-1850c6f82f7c" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID_FACULTAD" msprop:FriendlyName="ID_FACULTAD" msprop:DbColumnName="ID_FACULTAD" msprop:design-time-name="c4301fc0-56c8-413c-aec6-1c7e43dfa0bd" type="xs:long" minOccurs="0" />
+                  <xs:element name="NOMBRE_FACULTAD" msprop:FriendlyName="NOMBRE_FACULTAD" msprop:DbColumnName="NOMBRE_FACULTAD" msprop:design-time-name="8fac18f7-8a7a-4793-be22-b1eddf3caebf" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID_CARRERA" msprop:FriendlyName="ID_CARRERA" msprop:DbColumnName="ID_CARRERA" msprop:design-time-name="46acada0-821a-461c-98ec-4db194a83443" type="xs:long" minOccurs="0" />
+                  <xs:element name="NOMBRE_CARRERA" msprop:FriendlyName="NOMBRE_CARRERA" msprop:DbColumnName="NOMBRE_CARRERA" msprop:design-time-name="16077103-06db-4f3b-8b3b-c657d338b4b1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID_SEDE" msprop:FriendlyName="ID_SEDE" msprop:DbColumnName="ID_SEDE" msprop:design-time-name="1c77b23a-b8b7-4ddb-9dfd-0d27534c2e11" type="xs:long" minOccurs="0" />
+                  <xs:element name="NOMBRE_SEDE" msprop:FriendlyName="NOMBRE_SEDE" msprop:DbColumnName="NOMBRE_SEDE" msprop:design-time-name="3c6c6f14-0c29-47b9-897f-360b103ae5dd" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ESTADO" msprop:FriendlyName="ESTADO" msprop:DbColumnName="ESTADO" msprop:design-time-name="c7a0b0b6-37d1-4d11-b3a6-0f10d857fa8b" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_UMG_DIM_EVALUACION" msprop:DbTableName="DIM_EVALUACION" msprop:FriendlyName="DIM_EVALUACION" msprop:TableType="Table" msprop:DbSchemaName="DW_UMG" msprop:design-time-name="b01d72f0-4d19-48b1-aec6-088159b53abb">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_EVALUACION" msprop:FriendlyName="SK_EVALUACION" msprop:DbColumnName="SK_EVALUACION" msprop:design-time-name="678056fd-e2be-4daf-8f86-c2378b353ddb" type="xs:long" />
+                  <xs:element name="ID_EVALUACION" msprop:FriendlyName="ID_EVALUACION" msprop:DbColumnName="ID_EVALUACION" msprop:design-time-name="eda062fa-ee79-4920-a3f9-60552a0bac3a" type="xs:long" minOccurs="0" />
+                  <xs:element name="CODIGO" msprop:FriendlyName="CODIGO" msprop:DbColumnName="CODIGO" msprop:design-time-name="a0ad861b-dba2-4bbe-86ab-508ba0ed5e41" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOMBRE" msprop:FriendlyName="NOMBRE" msprop:DbColumnName="NOMBRE" msprop:design-time-name="eea9beef-f9ab-409d-87a9-11546a9172da" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PORCENTAJE" msprop:FriendlyName="PORCENTAJE" msprop:DbColumnName="PORCENTAJE" msprop:design-time-name="e4751471-57cc-44f2-920d-2f558629f0fb" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="PUNTEO_MAXIMO" msprop:FriendlyName="PUNTEO_MAXIMO" msprop:DbColumnName="PUNTEO_MAXIMO" msprop:design-time-name="8113bbdc-651c-4c73-91c2-25d342e4c4da" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="ORDEN" msprop:FriendlyName="ORDEN" msprop:DbColumnName="ORDEN" msprop:design-time-name="e602d5d2-46be-442f-b3df-b6c01e9fa8ae" type="xs:long" minOccurs="0" />
+                  <xs:element name="ESTADO" msprop:FriendlyName="ESTADO" msprop:DbColumnName="ESTADO" msprop:design-time-name="4356102c-8b2a-4191-9323-8f6e53898094" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_UMG_DIM_PERIODO" msprop:DbTableName="DIM_PERIODO" msprop:FriendlyName="DIM_PERIODO" msprop:TableType="Table" msprop:DbSchemaName="DW_UMG" msprop:design-time-name="6d6af6d3-576b-4d37-95b6-860fad4eb534">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_PERIODO" msprop:FriendlyName="SK_PERIODO" msprop:DbColumnName="SK_PERIODO" msprop:design-time-name="03c44566-48f0-432d-ba55-88a4d4abc2fd" type="xs:long" />
+                  <xs:element name="ID_ANIO" msprop:FriendlyName="ID_ANIO" msprop:DbColumnName="ID_ANIO" msprop:design-time-name="f2dfe5be-dd9e-4c2f-9869-68366ea0f5f5" type="xs:long" minOccurs="0" />
+                  <xs:element name="ANIO" msprop:FriendlyName="ANIO" msprop:DbColumnName="ANIO" msprop:design-time-name="c99a0852-c0d3-4a57-a9b7-d7dd6d80707c" type="xs:long" minOccurs="0" />
+                  <xs:element name="ID_SEMESTRE" msprop:FriendlyName="ID_SEMESTRE" msprop:DbColumnName="ID_SEMESTRE" msprop:design-time-name="326cd549-988e-43b2-a227-67ccb4ca2697" type="xs:long" minOccurs="0" />
+                  <xs:element name="SEMESTRE" msprop:FriendlyName="SEMESTRE" msprop:DbColumnName="SEMESTRE" msprop:design-time-name="dce45b6c-76ae-4aa2-8304-84389aba5209" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_UMG_DIM_TIEMPO" msprop:DbTableName="DIM_TIEMPO" msprop:FriendlyName="DIM_TIEMPO" msprop:TableType="Table" msprop:DbSchemaName="DW_UMG" msprop:design-time-name="291ef976-0d77-4679-bd10-d50d68a1d8e2">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_TIEMPO" msprop:FriendlyName="SK_TIEMPO" msprop:DbColumnName="SK_TIEMPO" msprop:design-time-name="49a8f083-cd57-4f92-8ed2-34be9a96e190" type="xs:long" />
+                  <xs:element name="FECHA" msprop:FriendlyName="FECHA" msprop:DbColumnName="FECHA" msprop:design-time-name="eefecb15-190d-4831-a415-ade3e1c307b4" type="xs:dateTime" />
+                  <xs:element name="ANIO" msprop:FriendlyName="ANIO" msprop:DbColumnName="ANIO" msprop:design-time-name="e025b9a2-db5e-40ee-ac6c-c7b7746ed330" type="xs:long" minOccurs="0" />
+                  <xs:element name="MES" msprop:FriendlyName="MES" msprop:DbColumnName="MES" msprop:design-time-name="561c87f5-8bcc-4142-8c84-35e18ac15bf5" type="xs:long" minOccurs="0" />
+                  <xs:element name="NOMBRE_MES" msprop:FriendlyName="NOMBRE_MES" msprop:DbColumnName="NOMBRE_MES" msprop:design-time-name="453fb884-3b72-40c0-827d-cc95711e94d7" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DIA" msprop:FriendlyName="DIA" msprop:DbColumnName="DIA" msprop:design-time-name="5ee59792-6b6c-4241-aad4-9e3a96fef1f5" type="xs:long" minOccurs="0" />
+                  <xs:element name="TRIMESTRE" msprop:FriendlyName="TRIMESTRE" msprop:DbColumnName="TRIMESTRE" msprop:design-time-name="b30970be-5bd6-4ab4-8e4f-6cfac0b30c3a" type="xs:long" minOccurs="0" />
+                  <xs:element name="SEMESTRE_CAL" msprop:FriendlyName="SEMESTRE_CAL" msprop:DbColumnName="SEMESTRE_CAL" msprop:design-time-name="d1782c27-dba3-4695-927b-d91e21630903" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_UMG_DIM_TIPO_CARGO" msprop:DbTableName="DIM_TIPO_CARGO" msprop:FriendlyName="DIM_TIPO_CARGO" msprop:TableType="Table" msprop:DbSchemaName="DW_UMG" msprop:design-time-name="5fa6e6cf-eb25-469c-8e45-786c8de84a39">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_TIPO_CARGO" msprop:FriendlyName="SK_TIPO_CARGO" msprop:DbColumnName="SK_TIPO_CARGO" msprop:design-time-name="91030fc1-0b89-42ca-b980-60e22f983550" type="xs:long" />
+                  <xs:element name="ID_TIPO_CARGO" msprop:FriendlyName="ID_TIPO_CARGO" msprop:DbColumnName="ID_TIPO_CARGO" msprop:design-time-name="4099c456-72b8-4407-8340-caa2d293d5a1" type="xs:long" minOccurs="0" />
+                  <xs:element name="CODIGO" msprop:FriendlyName="CODIGO" msprop:DbColumnName="CODIGO" msprop:design-time-name="e3535749-46e9-46ad-9529-3a09c8898b8d" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOMBRE" msprop:FriendlyName="NOMBRE" msprop:DbColumnName="NOMBRE" msprop:design-time-name="c051b25f-e815-459e-ab90-ac31960996fb" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ES_MORA" msprop:FriendlyName="ES_MORA" msprop:DbColumnName="ES_MORA" msprop:design-time-name="c85849a8-a0b1-445b-a514-1477d3281154" type="xs:long" minOccurs="0" />
+                  <xs:element name="ES_MULTA_EVALUACION" msprop:FriendlyName="ES_MULTA_EVALUACION" msprop:DbColumnName="ES_MULTA_EVALUACION" msprop:design-time-name="d2715432-7ee3-4036-b39e-c71369f62679" type="xs:long" minOccurs="0" />
+                  <xs:element name="ESTADO" msprop:FriendlyName="ESTADO" msprop:DbColumnName="ESTADO" msprop:design-time-name="a4300076-a50d-44dc-9409-c49a9f982e54" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_UMG_FACT_CARGOS" />
+          <xs:field xpath="ID_CARGO" />
+        </xs:unique>
+        <xs:unique name="DW_UMG_DIM_CATEDRATICO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_UMG_DIM_CATEDRATICO" />
+          <xs:field xpath="SK_CATEDRATICO" />
+        </xs:unique>
+        <xs:unique name="DW_UMG_DIM_CURSO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_UMG_DIM_CURSO" />
+          <xs:field xpath="SK_CURSO" />
+        </xs:unique>
+        <xs:unique name="DW_UMG_DIM_ESTUDIANTE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_UMG_DIM_ESTUDIANTE" />
+          <xs:field xpath="SK_ESTUDIANTE" />
+        </xs:unique>
+        <xs:unique name="DW_UMG_DIM_EVALUACION_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_UMG_DIM_EVALUACION" />
+          <xs:field xpath="SK_EVALUACION" />
+        </xs:unique>
+        <xs:unique name="DW_UMG_DIM_PERIODO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_UMG_DIM_PERIODO" />
+          <xs:field xpath="SK_PERIODO" />
+        </xs:unique>
+        <xs:unique name="DW_UMG_DIM_TIEMPO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_UMG_DIM_TIEMPO" />
+          <xs:field xpath="SK_TIEMPO" />
+        </xs:unique>
+        <xs:unique name="DW_UMG_DIM_TIPO_CARGO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_UMG_DIM_TIPO_CARGO" />
+          <xs:field xpath="SK_TIPO_CARGO" />
+        </xs:unique>
+        <xs:keyref name="FK_FC_TIPO_CARGO" refer="DW_UMG_DIM_TIPO_CARGO_Constraint1">
+          <xs:selector xpath=".//DW_UMG_FACT_CARGOS" />
+          <xs:field xpath="SK_TIPO_CARGO" />
+        </xs:keyref>
+        <xs:keyref name="FK_FC_EVALUACION" refer="DW_UMG_DIM_EVALUACION_Constraint1">
+          <xs:selector xpath=".//DW_UMG_FACT_CARGOS" />
+          <xs:field xpath="SK_EVALUACION" />
+        </xs:keyref>
+        <xs:keyref name="FK_FC_ESTUDIANTE" refer="DW_UMG_DIM_ESTUDIANTE_Constraint1">
+          <xs:selector xpath=".//DW_UMG_FACT_CARGOS" />
+          <xs:field xpath="SK_ESTUDIANTE" />
+        </xs:keyref>
+        <xs:keyref name="FK_FC_PERIODO" refer="DW_UMG_DIM_PERIODO_Constraint1">
+          <xs:selector xpath=".//DW_UMG_FACT_CARGOS" />
+          <xs:field xpath="SK_PERIODO" />
+        </xs:keyref>
+        <xs:keyref name="FK_FC_T_VENC" refer="DW_UMG_DIM_TIEMPO_Constraint1">
+          <xs:selector xpath=".//DW_UMG_FACT_CARGOS" />
+          <xs:field xpath="SK_TIEMPO_VENC" />
+        </xs:keyref>
+        <xs:keyref name="FK_FC_CATEDRATICO" refer="DW_UMG_DIM_CATEDRATICO_Constraint1">
+          <xs:selector xpath=".//DW_UMG_FACT_CARGOS" />
+          <xs:field xpath="SK_CATEDRATICO" />
+        </xs:keyref>
+        <xs:keyref name="FK_FC_CURSO" refer="DW_UMG_DIM_CURSO_Constraint1">
+          <xs:selector xpath=".//DW_UMG_FACT_CARGOS" />
+          <xs:field xpath="SK_CURSO" />
+        </xs:keyref>
+        <xs:keyref name="FK_FC_T_CARGO" refer="DW_UMG_DIM_TIEMPO_Constraint1">
+          <xs:selector xpath=".//DW_UMG_FACT_CARGOS" />
+          <xs:field xpath="SK_TIEMPO_CARGO" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Vista_Cargos xmlns="" />
+  </Schema>
+</DataSourceView>
