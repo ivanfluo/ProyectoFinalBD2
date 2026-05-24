@@ -1,6 +1,6 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="05d88916-32c1-4842-a923-4cad679106dc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
-  <ID>DIM PERIODO 3</ID>
-  <Name>DIM PERIODO 3</Name>
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cda95bcc-8303-4485-b592-0ee0212ca303" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DIM PERIODO 1</ID>
+  <Name>DIM PERIODO 1</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Annotations>
@@ -68,35 +68,35 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b8f9e5a6-586f-4d8d-8208-518a7e128c98">
-    <DataSourceViewID>Vista_Pagos</DataSourceViewID>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="220b9be9-4f28-4094-a301-5f12ac9ffada">
+    <DataSourceViewID>Vista_Asignaciones</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="0b236ae9-cc0a-40dd-a355-d071e0799b4a">
+  <ErrorConfiguration dwd:design-time-name="3e32f371-70d7-4434-8aeb-a8693a7a4671">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="3c3336b8-27d5-439c-84f1-3f37bf9b2565">
+    <Attribute dwd:design-time-name="2e55dfd6-06f5-4f3a-8f39-b9d4e85ae0c9">
       <ID>SK PERIODO</ID>
       <Name>SK PERIODO</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a2976eb9-6df6-47c8-bd02-8314f2fe8535">
+        <KeyColumn dwd:design-time-name="1e713d38-c9b0-4847-bdd8-1cc275477729">
           <DataType>BigInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fdd307c0-eb67-4708-b48b-e5f203294947">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8e37ff5b-7982-474f-bb6e-662985b5f0f2">
             <TableID>DW_UMG_DIM_PERIODO</TableID>
             <ColumnID>SK_PERIODO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="2591f1a6-79c6-4db5-95a7-0d3f8aabe451">
+        <AttributeRelationship dwd:design-time-name="94ed0679-99d5-4a80-a893-782b0ca0dffb">
           <AttributeID>ANIO</AttributeID>
           <Name>ANIO</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="af433278-9aac-46cf-87dd-a2f111fc90d4">
+        <AttributeRelationship dwd:design-time-name="48d544f0-84cf-4ea4-86c3-b996b512b8a6">
           <AttributeID>SEMESTRE</AttributeID>
           <Name>SEMESTRE</Name>
         </AttributeRelationship>
@@ -105,13 +105,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2a891035-7720-43e9-ac6d-4b9c88e276f5">
+    <Attribute dwd:design-time-name="8a47cea2-f05e-433d-b8f8-1b9e1a5c6023">
       <ID>ANIO</ID>
       <Name>ANIO</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e6556a33-cb5c-4826-a0b2-ce04cb71c040">
+        <KeyColumn dwd:design-time-name="dfd20a5b-2cf3-43fa-baaa-1342df8ea957">
           <DataType>BigInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="da94e06b-f888-46a8-a511-47cbc15b550a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="03eed4a5-831e-4c59-bcc5-e28582584109">
             <TableID>DW_UMG_DIM_PERIODO</TableID>
             <ColumnID>ANIO</ColumnID>
           </Source>
@@ -120,14 +120,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ae6c5f7f-44a6-4afc-8b03-c07210e28d85">
+    <Attribute dwd:design-time-name="1c7526a6-bf6b-4c28-8967-7034d6857825">
       <ID>SEMESTRE</ID>
       <Name>SEMESTRE</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="82500bf7-fc3d-437e-b2c4-a621749cc608">
+        <KeyColumn dwd:design-time-name="cf424bdb-0e47-4c23-bdb5-72925f4b7f72">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8c72a8b7-36c4-4e4a-ace7-cdfb8297c834">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1937c38a-8f92-40cb-9c2f-44f1e049a7bf">
             <TableID>DW_UMG_DIM_PERIODO</TableID>
             <ColumnID>SEMESTRE</ColumnID>
           </Source>

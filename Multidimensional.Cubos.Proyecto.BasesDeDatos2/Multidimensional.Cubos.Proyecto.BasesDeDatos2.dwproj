@@ -8,192 +8,192 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>Cubo_Notas.cube</Name>
-      <FullPath>Cubo_Notas.cube</FullPath>
+      <Name>Cub_Notas.cube</Name>
+      <FullPath>Cub_Notas.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>Cubo_Notas.partitions</Name>
-          <FullPath>Cubo_Notas.partitions</FullPath>
+          <Name>Cub_Notas.partitions</Name>
+          <FullPath>Cub_Notas.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
     <ProjectItem>
-      <Name>Cubo_Asignaciones.cube</Name>
-      <FullPath>Cubo_Asignaciones.cube</FullPath>
+      <Name>Cub_Asignaciones.cube</Name>
+      <FullPath>Cub_Asignaciones.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>Cubo_Asignaciones.partitions</Name>
-          <FullPath>Cubo_Asignaciones.partitions</FullPath>
+          <Name>Cub_Asignaciones.partitions</Name>
+          <FullPath>Cub_Asignaciones.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
     <ProjectItem>
-      <Name>Cubo_Mora.cube</Name>
-      <FullPath>Cubo_Mora.cube</FullPath>
+      <Name>Cub_Mora.cube</Name>
+      <FullPath>Cub_Mora.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>Cubo_Mora.partitions</Name>
-          <FullPath>Cubo_Mora.partitions</FullPath>
+          <Name>Cub_Mora.partitions</Name>
+          <FullPath>Cub_Mora.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
     <ProjectItem>
-      <Name>Cubo_Pagos.cube</Name>
-      <FullPath>Cubo_Pagos.cube</FullPath>
+      <Name>Cub_Pagos.cube</Name>
+      <FullPath>Cub_Pagos.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>Cubo_Pagos.partitions</Name>
-          <FullPath>Cubo_Pagos.partitions</FullPath>
+          <Name>Cub_Pagos.partitions</Name>
+          <FullPath>Cub_Pagos.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
     <ProjectItem>
-      <Name>Cubo_Cargos.cube</Name>
-      <FullPath>Cubo_Cargos.cube</FullPath>
+      <Name>Cub_Cargos.cube</Name>
+      <FullPath>Cub_Cargos.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>Cubo_Cargos.partitions</Name>
-          <FullPath>Cubo_Cargos.partitions</FullPath>
+          <Name>Cub_Cargos.partitions</Name>
+          <FullPath>Cub_Cargos.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>DIM TIEMPO.dim</Name>
-      <FullPath>DIM TIEMPO.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DIM JORNADA.dim</Name>
-      <FullPath>DIM JORNADA.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DIM SEDE.dim</Name>
-      <FullPath>DIM SEDE.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DIM CURSO.dim</Name>
-      <FullPath>DIM CURSO.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DIM CATEDRATICO.dim</Name>
-      <FullPath>DIM CATEDRATICO.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DIM EVALUACION.dim</Name>
-      <FullPath>DIM EVALUACION.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DIM ESTUDIANTE.dim</Name>
-      <FullPath>DIM ESTUDIANTE.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DIM PERIODO.dim</Name>
-      <FullPath>DIM PERIODO.dim</FullPath>
+      <Name>DIM PERIODO 1.dim</Name>
+      <FullPath>DIM PERIODO 1.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>DIM ESTUDIANTE 1.dim</Name>
       <FullPath>DIM ESTUDIANTE 1.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM JORNADA 1.dim</Name>
-      <FullPath>DIM JORNADA 1.dim</FullPath>
+      <Name>DIM EVALUACION.dim</Name>
+      <FullPath>DIM EVALUACION.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM CATEDRATICO.dim</Name>
+      <FullPath>DIM CATEDRATICO.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>DIM CURSO 1.dim</Name>
       <FullPath>DIM CURSO 1.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM ESTADO ASIG.dim</Name>
-      <FullPath>DIM ESTADO ASIG.dim</FullPath>
+      <Name>DIM SEDE.dim</Name>
+      <FullPath>DIM SEDE.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM SEDE 1.dim</Name>
-      <FullPath>DIM SEDE 1.dim</FullPath>
+      <Name>DIM JORNADA.dim</Name>
+      <FullPath>DIM JORNADA.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM CATEDRATICO 1.dim</Name>
-      <FullPath>DIM CATEDRATICO 1.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DIM PERIODO 1.dim</Name>
-      <FullPath>DIM PERIODO 1.dim</FullPath>
+      <Name>DIM TIEMPO.dim</Name>
+      <FullPath>DIM TIEMPO.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>DIM TIEMPO 1.dim</Name>
       <FullPath>DIM TIEMPO 1.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM CATEDRATICO 2.dim</Name>
-      <FullPath>DIM CATEDRATICO 2.dim</FullPath>
+      <Name>DIM PERIODO 1 1.dim</Name>
+      <FullPath>DIM PERIODO 1 1.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM CURSO 2.dim</Name>
-      <FullPath>DIM CURSO 2.dim</FullPath>
+      <Name>DIM CATEDRATICO 1.dim</Name>
+      <FullPath>DIM CATEDRATICO 1.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM ESTUDIANTE 2.dim</Name>
-      <FullPath>DIM ESTUDIANTE 2.dim</FullPath>
+      <Name>DIM SEDE 1.dim</Name>
+      <FullPath>DIM SEDE 1.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM PERIODO 2.dim</Name>
-      <FullPath>DIM PERIODO 2.dim</FullPath>
+      <Name>DIM ESTADO ASIG.dim</Name>
+      <FullPath>DIM ESTADO ASIG.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM CURSO 1 1.dim</Name>
+      <FullPath>DIM CURSO 1 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM JORNADA 1.dim</Name>
+      <FullPath>DIM JORNADA 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM ESTUDIANTE 1 1.dim</Name>
+      <FullPath>DIM ESTUDIANTE 1 1.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>DIM TIEMPO 2.dim</Name>
       <FullPath>DIM TIEMPO 2.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM ESTUDIANTE 3.dim</Name>
-      <FullPath>DIM ESTUDIANTE 3.dim</FullPath>
+      <Name>DIM PERIODO 2.dim</Name>
+      <FullPath>DIM PERIODO 2.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM TIEMPO 3.dim</Name>
-      <FullPath>DIM TIEMPO 3.dim</FullPath>
+      <Name>DIM ESTUDIANTE 2.dim</Name>
+      <FullPath>DIM ESTUDIANTE 2.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM PERIODO 3.dim</Name>
-      <FullPath>DIM PERIODO 3.dim</FullPath>
+      <Name>DIM CURSO 2.dim</Name>
+      <FullPath>DIM CURSO 2.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM METODO PAGO.dim</Name>
-      <FullPath>DIM METODO PAGO.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DIM CATEDRATICO 3.dim</Name>
-      <FullPath>DIM CATEDRATICO 3.dim</FullPath>
+      <Name>DIM CATEDRATICO 2.dim</Name>
+      <FullPath>DIM CATEDRATICO 2.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>DIM CURSO 3.dim</Name>
       <FullPath>DIM CURSO 3.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM TIEMPO 4.dim</Name>
-      <FullPath>DIM TIEMPO 4.dim</FullPath>
+      <Name>DIM CATEDRATICO 3.dim</Name>
+      <FullPath>DIM CATEDRATICO 3.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM CURSO 4.dim</Name>
-      <FullPath>DIM CURSO 4.dim</FullPath>
+      <Name>DIM METODO PAGO.dim</Name>
+      <FullPath>DIM METODO PAGO.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM CATEDRATICO 4.dim</Name>
-      <FullPath>DIM CATEDRATICO 4.dim</FullPath>
+      <Name>DIM PERIODO 3.dim</Name>
+      <FullPath>DIM PERIODO 3.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM PERIODO 4.dim</Name>
-      <FullPath>DIM PERIODO 4.dim</FullPath>
+      <Name>DIM TIEMPO 3.dim</Name>
+      <FullPath>DIM TIEMPO 3.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM ESTUDIANTE 4.dim</Name>
-      <FullPath>DIM ESTUDIANTE 4.dim</FullPath>
+      <Name>DIM ESTUDIANTE 3.dim</Name>
+      <FullPath>DIM ESTUDIANTE 3.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM TIPO CARGO.dim</Name>
+      <FullPath>DIM TIPO CARGO.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>DIM EVALUACION 1.dim</Name>
       <FullPath>DIM EVALUACION 1.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM TIPO CARGO.dim</Name>
-      <FullPath>DIM TIPO CARGO.dim</FullPath>
+      <Name>DIM ESTUDIANTE 4.dim</Name>
+      <FullPath>DIM ESTUDIANTE 4.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM PERIODO 4.dim</Name>
+      <FullPath>DIM PERIODO 4.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM TIEMPO 4.dim</Name>
+      <FullPath>DIM TIEMPO 4.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM CATEDRATICO 4.dim</Name>
+      <FullPath>DIM CATEDRATICO 4.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM CURSO 4.dim</Name>
+      <FullPath>DIM CURSO 4.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

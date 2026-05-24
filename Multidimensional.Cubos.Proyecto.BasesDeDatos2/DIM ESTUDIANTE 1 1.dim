@@ -1,6 +1,6 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="70943c1b-b453-4556-b613-890d583f0f5b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
-  <ID>DIM ESTUDIANTE</ID>
-  <Name>DIM ESTUDIANTE</Name>
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8f431f83-b7f4-40a5-9b69-825149677316" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DIM ESTUDIANTE 1</ID>
+  <Name>DIM ESTUDIANTE 1</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Annotations>
@@ -68,35 +68,35 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="9bff03f9-7904-4655-8438-1d6246416e73">
-    <DataSourceViewID>Vista_Notas</DataSourceViewID>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="f612867c-0a61-41a8-af80-4388e6926fc0">
+    <DataSourceViewID>Vista_Asignaciones</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="58c180ee-039a-4539-b43d-0487e58e938a">
+  <ErrorConfiguration dwd:design-time-name="710a1872-36a6-46e4-bcb0-43e16aeeb13d">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="8a5ddbbb-e25c-4f6e-b1e9-e8267187ef78">
+    <Attribute dwd:design-time-name="1fd87673-9bd8-4c22-99d3-f2ab1ed18186">
       <ID>SK ESTUDIANTE</ID>
       <Name>SK ESTUDIANTE</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="08df7d44-e3ab-4c94-84b7-1b4c20ea6ace">
+        <KeyColumn dwd:design-time-name="48e61244-ad22-4a85-9168-273813a2e0f4">
           <DataType>BigInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e0975d51-a829-49a6-a49d-a61ac487a639">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f261757f-1e90-4ada-895e-0b338a1d18a3">
             <TableID>DW_UMG_DIM_ESTUDIANTE</TableID>
             <ColumnID>SK_ESTUDIANTE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="55312813-f07e-47c3-abbb-cf9ae41ecdee">
+        <AttributeRelationship dwd:design-time-name="8470a7d3-546c-43fe-94e9-f891f71b9b9f">
           <AttributeID>CARNET</AttributeID>
           <Name>CARNET</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="e7459d5e-dbbc-4be8-ba24-c730c555f5e7">
+        <AttributeRelationship dwd:design-time-name="6d62931b-3bd6-4cbf-83e4-b193112ee428">
           <AttributeID>NOMBRE COMPLETO</AttributeID>
           <Name>NOMBRE COMPLETO</Name>
         </AttributeRelationship>
@@ -105,14 +105,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c01d9fca-a20a-4761-a8e0-1e5bfa0f4c71">
+    <Attribute dwd:design-time-name="eb2fd493-6fed-4d8b-b66b-81cde1fd66b0">
       <ID>CARNET</ID>
       <Name>CARNET</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6a8d3878-7645-4d7b-988d-47d3eb8aa71f">
+        <KeyColumn dwd:design-time-name="3f8322f4-66b5-414e-9be1-8528dd410348">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6be7060e-e69d-4120-8182-a9ec3d9775dc">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="667ed698-39e8-429c-9d83-3958d888f04f">
             <TableID>DW_UMG_DIM_ESTUDIANTE</TableID>
             <ColumnID>CARNET</ColumnID>
           </Source>
@@ -121,14 +121,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c371379b-45d7-4bd2-aad5-cd1b2b92cd53">
+    <Attribute dwd:design-time-name="45da0ed1-52ba-4a61-a484-9e66da149dd7">
       <ID>NOMBRE COMPLETO</ID>
       <Name>NOMBRE COMPLETO</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ce5c3df3-ead7-483a-8284-f8951a203093">
+        <KeyColumn dwd:design-time-name="3a7e9a96-93df-45e4-8a2c-119736e9e3a5">
           <DataType>WChar</DataType>
           <DataSize>250</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b908756-8e10-4c30-98b0-dcab691e39c8">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="35c61dec-239f-40fd-8ab7-0ade073a7d2c">
             <TableID>DW_UMG_DIM_ESTUDIANTE</TableID>
             <ColumnID>NOMBRE_COMPLETO</ColumnID>
           </Source>
