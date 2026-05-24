@@ -11,8 +11,8 @@
   DTS:LocaleID="4106"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="78"
-  DTS:VersionGUID="{F9AE9E3E-D154-4590-AEA1-98C0EBD21572}">
+  DTS:VersionBuild="84"
+  DTS:VersionGUID="{116BB938-2928-4C17-AB81-3DAA71D2FE34}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -474,7 +474,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA2yz2J+QeEO+cnuOWyvGCYXZUl6a8ZyG9evE5pTbNavAAAAAAOgAAAAAIAACAAAAAzY/wnpvsu9ANRgjtFoBECZVRGMrNPjxc+dCZaiLePWBAAAACQrT0pOA6+poptjPiBYuH+QAAAABylR6htyzNzY3cEEJNNT4Ooxw7lXfugsebsDNNY4yUzXeigLvQIiVOdqsSh2u6nhwEkRwmubGCARuWRUIrOnOQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADHAyJTs1+3uLko4jqJzXUDDziF1HgsvPez6AhNiEKu8gAAAAAOgAAAAAIAACAAAACggCeqieWoly+gLQSyNF/VXHQlI75Yc+zlLCov/CS12BAAAADYDnUNBGmzH6KOUqBIjEwMQAAAALJZNPwVL506FgY7BlolKLDiT/jey/pK8pjEa/0vwL33bZ37f4PZDltUkMi6AFLhfjhkJd1jvk//ahDj0RDJxvY</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -489,7 +489,7 @@
           <DTS:Password
             DTS:Name="pwd"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADRkIvgYnsNPJJ5E2tX3bJteR6SAIrlB5/Ao56jVtXL2AAAAAAOgAAAAAIAACAAAADj8nYRcv/+88O6Pg8bXNI7Mb0GtTUQRfwsCMSvhwTEWBAAAAC7bMXDNyf5DqcRMBFNTcTYQAAAANaeg0q2TG4but8yVS6uCjrLs8sjS2TTKY0fTIdM6fvl33ZPO/W7jp8qkmBPV3Jg//fOFFuztk9PmMRwy0feGB4</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABVgSYgBzFKPh8RatZI5B1/PQMJPdrkM6W9VNuBNzgoiAAAAAAOgAAAAAIAACAAAABdqMAEue3EO2LioVds7SF8xcLkI5mTgGH+J8rGO+N/oBAAAABUbDJbyIGrtoiCLouYm8iAQAAAAHNhhWEfe7D03bsUV4K7JNDmu3WRrW6W4iadjiUTd67VN1Ft/U7eq11eMTQHPjAQXmS0SN2CnKX8/tFBxCmUedc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -506,7 +506,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABUHumz7XsP/rYrtzXUhQRmUw6LtRFf1S16QPlDZB7SXQAAAAAOgAAAAAIAACAAAAA85Kzx1DpYqp6wnf5GAvFsBlnZUe0unr3htJkwbHA3lBAAAABrToYgyfAuDBhY8cODJwgEQAAAADoQo61h4Ou0WT6Ow1I1gq98gFbSRVvSszj4oNLNA+BeOi+8MSkuLpkVjif7V/BvfWL/XbcRNNQczQidxnD9q9Q</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABp7CadGEWVCO+fEkI3VKhhgyJf/qNYvY000nrfVBAghQAAAAAOgAAAAAIAACAAAAAroBadYmI0PjOzv27ec83V6mn6Zyq65G4hddOKE4TuVRAAAABDLd2vPC/UlZVpnw5PJvszQAAAANTUpUPd1MPx/Ws7Ki27vXvHMCfckJuQEBH/XG4hIbUeMcjqMS9kQCaaZhCs2L8JcMl7dF2BlZhyGZ5nc3/v69Q</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -523,13 +523,149 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADjpTMH6V2QfNOWhXd+/Zw7acv5LL31oRxofHMWDwBLUAAAAAAOgAAAAAIAACAAAADn0UTVAticNg6pY2cY3JYb9rBb8AUAA8ztDvJYX+HnFxAAAADUVEJO303VCh5vwrsFpRZCQAAAADQN5MlOBHh01IAOyCj3vmEOInEa8Iy8ufXjMs5KunJZs86cIred4NpX5Ddx4i9zv9XQD/mfKxU16Xt64ncHdz0</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABZ+yJ+zMPas/sEXlS5I5VNalCS2s6Tzaal8CCZkEbdHgAAAAAOgAAAAAIAACAAAABvmoBnM3MjDJz5dUCNje2rh9vGFZS77A+GIGoWrOZ+zxAAAAD+zg84695jDpPI16S+zFBdQAAAAHHLOpkc0JWFM3PGEpcSgFP9gVATp44TR284r6uirChQOcO7QJSbUpdsTFzeTp4DLY5Dnx0tZ7Oa2iojTGZ8YKs</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\CARGA_ODS"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Contenedor de secuencias"
+      DTS:DTSID="{4C9A21F2-F096-46B6-A155-B180656E4711}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CARGA_ODS">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\CARGA_ODS\CARGA_ODS_ACADEMICO"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Tarea Ejecutar SQL"
+          DTS:DTSID="{A9C218CA-7327-4634-AE6E-7DF5C355AB71}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="CARGA_ODS_ACADEMICO"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{A21C3267-228A-4AB4-966C-8A55C8EA7FD5}"
+              SQLTask:BypassPrepare="False"
+              SQLTask:SqlStatementSource="BEGIN&#xA;    PRC_POBLAR_ODS_ACADEMICO;&#xA;END;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\CARGA_ODS\CARGA_ODS_ASIGNACIONES_NOTAS"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Tarea Ejecutar SQL"
+          DTS:DTSID="{A3905477-821A-47BD-AB79-AB2EF7895B9F}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="CARGA_ODS_ASIGNACIONES_NOTAS"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{A21C3267-228A-4AB4-966C-8A55C8EA7FD5}"
+              SQLTask:BypassPrepare="False"
+              SQLTask:SqlStatementSource="BEGIN&#xA;    PRC_ODS_ASIG_NOTAS;&#xA;END;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\CARGA_ODS\CARGA_ODS_CATALOGOS"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Tarea Ejecutar SQL"
+          DTS:DTSID="{3E5C4344-E453-4CAA-96B5-5B6E3484F9D0}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="CARGA_ODS_CATALOGOS"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{A21C3267-228A-4AB4-966C-8A55C8EA7FD5}"
+              SQLTask:BypassPrepare="False"
+              SQLTask:SqlStatementSource="BEGIN&#xA;    PRC_POBLAR_ODS_CATALOGOS;&#xA;END;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\CARGA_ODS\CARGA_ODS_FINANCIERO"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Tarea Ejecutar SQL"
+          DTS:DTSID="{D77EA89B-BB86-4115-886A-EF949675FDAB}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="CARGA_ODS_FINANCIERO"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{A21C3267-228A-4AB4-966C-8A55C8EA7FD5}"
+              SQLTask:BypassPrepare="False"
+              SQLTask:SqlStatementSource="BEGIN&#xA;    PRC_POBLAR_ODS_FINANCIERO;&#xA;END;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\CARGA_ODS\LIMPIAR_ODS"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Tarea Ejecutar SQL"
+          DTS:DTSID="{E6D1C50A-69D5-4B62-8056-B03E869E626F}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="LIMPIAR_ODS"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{A21C3267-228A-4AB4-966C-8A55C8EA7FD5}"
+              SQLTask:BypassPrepare="False"
+              SQLTask:SqlStatementSource="BEGIN&#xA;    DELETE FROM ODS_ESTADOS_CUENTA;&#xA;    DELETE FROM ODS_PAGOS;&#xA;    DELETE FROM ODS_CARGOS;&#xA;    DELETE FROM ODS_NOTAS;&#xA;    DELETE FROM ODS_ASIGNACIONES;&#xA;&#xA;    DELETE FROM ODS_ESTUDIANTES;&#xA;    DELETE FROM ODS_HORARIOS;&#xA;    DELETE FROM ODS_CATEDRATICOS;&#xA;    DELETE FROM ODS_CURSOS;&#xA;&#xA;    DELETE FROM ODS_CARRERAS;&#xA;    DELETE FROM ODS_SEDES;&#xA;    DELETE FROM ODS_JORNADAS;&#xA;&#xA;    DELETE FROM ODS_ESTADOS_ASIGNACION;&#xA;    DELETE FROM ODS_EVALUACIONES;&#xA;    DELETE FROM ODS_METODOS_PAGO;&#xA;    DELETE FROM ODS_TIPOS_CARGO;&#xA;&#xA;    COMMIT;&#xA;END;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\CARGA_ODS.PrecedenceConstraints[Restricción]"
+          DTS:CreationName=""
+          DTS:DTSID="{ECC71ECE-EA39-4EBD-9706-9B7611168616}"
+          DTS:From="Package\CARGA_ODS\LIMPIAR_ODS"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Restricción"
+          DTS:To="Package\CARGA_ODS\CARGA_ODS_CATALOGOS" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\CARGA_ODS.PrecedenceConstraints[Restricción 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{39A5A4B7-5C78-4446-B0B1-ABB0789721EB}"
+          DTS:From="Package\CARGA_ODS\CARGA_ODS_CATALOGOS"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Restricción 1"
+          DTS:To="Package\CARGA_ODS\CARGA_ODS_ACADEMICO" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\CARGA_ODS.PrecedenceConstraints[Restricción 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{FBB82DF5-0553-4DB2-A471-09632EDF10CC}"
+          DTS:From="Package\CARGA_ODS\CARGA_ODS_ACADEMICO"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Restricción 2"
+          DTS:To="Package\CARGA_ODS\CARGA_ODS_ASIGNACIONES_NOTAS" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\CARGA_ODS.PrecedenceConstraints[Restricción 3]"
+          DTS:CreationName=""
+          DTS:DTSID="{DFADFF74-B164-40BC-A1E3-90FD30DD712C}"
+          DTS:From="Package\CARGA_ODS\CARGA_ODS_ASIGNACIONES_NOTAS"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Restricción 3"
+          DTS:To="Package\CARGA_ODS\CARGA_ODS_FINANCIERO" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\EXCEL"
       DTS:CreationName="STOCK:SEQUENCE"
@@ -16214,6 +16350,14 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 4"
       DTS:To="Package\ORACLE" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{43B96AE1-52C4-4F5E-BF79-4FD4F3256C18}"
+      DTS:From="Package\EXCEL"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 5"
+      DTS:To="Package\CARGA_ODS" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
@@ -16228,6 +16372,121 @@
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="203,42"
+          Id="Package\CARGA_ODS\CARGA_ODS_CATALOGOS"
+          TopLeft="52.8571428571431,119.571428571429" />
+        <NodeLayout
+          Size="146,42"
+          Id="Package\CARGA_ODS\LIMPIAR_ODS"
+          TopLeft="77.9999999999995,27.3076923076923" />
+        <EdgeLayout
+          Id="Package\CARGA_ODS.PrecedenceConstraints[Restricción]"
+          TopLeft="152.678571428571,69.3076923076923">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50.2637362637367"
+              Start="0,0"
+              End="0,42.7637362637367">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.7637362637367" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="203,42"
+          Id="Package\CARGA_ODS\CARGA_ODS_ACADEMICO"
+          TopLeft="48,195" />
+        <EdgeLayout
+          Id="Package\CARGA_ODS.PrecedenceConstraints[Restricción 1]"
+          TopLeft="151.928571428572,161.571428571429">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33.428571428571"
+              Start="0,0"
+              End="0,25.928571428571">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.928571428571" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="257,42"
+          Id="Package\CARGA_ODS\CARGA_ODS_ASIGNACIONES_NOTAS"
+          TopLeft="27,283" />
+        <EdgeLayout
+          Id="Package\CARGA_ODS.PrecedenceConstraints[Restricción 2]"
+          TopLeft="152.5,237">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46"
+              Start="0,0"
+              End="0,38.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="205,42"
+          Id="Package\CARGA_ODS\CARGA_ODS_FINANCIERO"
+          TopLeft="55,369" />
+        <EdgeLayout
+          Id="Package\CARGA_ODS.PrecedenceConstraints[Restricción 3]"
+          TopLeft="156.5,325">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44"
+              Start="0,0"
+              End="0,36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="323,466"
+          Size="323,509"
+          Id="Package\CARGA_ODS"
+          TopLeft="1990.89743589744,276.831501831502" />
+        <NodeLayout
           Size="204,42"
           Id="Package\EXCEL\DFT_STG_XLS_JORNADAS"
           TopLeft="38.6190476190479,29.2380952380952" />
@@ -16238,6 +16497,10 @@
           Size="269,168"
           Id="Package\EXCEL"
           TopLeft="1648.28571428571,322.857142857143" />
+        <NodeLayout
+          Size="183,42"
+          Id="Package\LIMPIAR DB STAGING"
+          TopLeft="116,19" />
         <NodeLayout
           Size="186,42"
           Id="Package\ORACLE\DFT_STG_ORA_ANIOS"
@@ -16838,10 +17101,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="183,42"
-          Id="Package\LIMPIAR DB STAGING"
-          TopLeft="116,19" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 4]"
           TopLeft="210,61">
@@ -16856,6 +17115,40 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,29.2142857142857" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 5]"
+          TopLeft="1917.28571428571,406.857142857143">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="73.6117216117302,124.474358974359"
+              Start="0,0"
+              End="66.1117216117302,124.474358974359">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="32.8058608058651,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="32.8058608058651,0"
+                    Point2="36.8058608058651,0"
+                    Point3="36.8058608058651,4" />
+                  <mssgle:LineSegment
+                    End="36.8058608058651,120.474358974359" />
+                  <mssgle:CubicBezierSegment
+                    Point1="36.8058608058651,120.474358974359"
+                    Point2="36.8058608058651,124.474358974359"
+                    Point3="40.8058608058651,124.474358974359" />
+                  <mssgle:LineSegment
+                    End="66.1117216117302,124.474358974359" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -17229,7 +17522,7 @@
     design-time-name="Package\ORACLE\DFT_STG_ORA_HORARIOS">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
           Id="Package\ORACLE\DFT_STG_ORA_HORARIOS\OLE DB Destination"
@@ -17261,7 +17554,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17283,7 +17578,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -18186,15 +18483,15 @@
     design-time-name="Package\SQLSERVER\DFT_STG_SQL_NOTAS">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="171,42"
-          Id="Package\SQLSERVER\DFT_STG_SQL_NOTAS\OLE DB Destination"
-          TopLeft="540,316.25" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="172,42"
           Id="Package\SQLSERVER\DFT_STG_SQL_NOTAS\Origen de ADO NET"
           TopLeft="531.25,108.75" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\SQLSERVER\DFT_STG_SQL_NOTAS\OLE DB Destination"
+          TopLeft="540,316.25" />
         <NodeLayout
           Size="156,42"
           Id="Package\SQLSERVER\DFT_STG_SQL_NOTAS\Data Conversion"
@@ -18218,7 +18515,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18240,12 +18539,35 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\SQLSERVER\DFT_STG_SQL_NOTAS\Origen de ADO NET">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\SQLSERVER\DFT_STG_SQL_NOTAS\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\TXT\DFT_ STG_TXT_DEPARTAMENTOS">
     <LayoutInfo>
@@ -18729,27 +19051,6 @@
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\SQLSERVER\DFT_STG_SQL_NOTAS\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\SQLSERVER\DFT_STG_SQL_NOTAS\Origen de ADO NET">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
