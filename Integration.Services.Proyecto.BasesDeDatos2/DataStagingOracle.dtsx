@@ -11,8 +11,8 @@
   DTS:LocaleID="4106"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="84"
-  DTS:VersionGUID="{116BB938-2928-4C17-AB81-3DAA71D2FE34}">
+  DTS:VersionBuild="92"
+  DTS:VersionGUID="{B40FEA33-35B7-4F3E-96CD-3BF2C32682F8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -474,7 +474,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADHAyJTs1+3uLko4jqJzXUDDziF1HgsvPez6AhNiEKu8gAAAAAOgAAAAAIAACAAAACggCeqieWoly+gLQSyNF/VXHQlI75Yc+zlLCov/CS12BAAAADYDnUNBGmzH6KOUqBIjEwMQAAAALJZNPwVL506FgY7BlolKLDiT/jey/pK8pjEa/0vwL33bZ37f4PZDltUkMi6AFLhfjhkJd1jvk//ahDj0RDJxvY</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAOw2BHs1P0ptS7UCTJC1Ll8X0MZ/A/++mQLucnJrMyNQAAAAAOgAAAAAIAACAAAABGDQTpDeLCIwLQRz6rywL6NP/go2Rl02tiGbe/LanzYBAAAAD1cDbn/36+l0oKNPrHWCkEQAAAAB7dgQzEieyhzahOGul5YZeh0sub3WabLqoxPa4HfmlUFCQ2vhukniovxDgoCcUKYIPNsNVfL375ew42ISIf1sY</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -489,7 +489,24 @@
           <DTS:Password
             DTS:Name="pwd"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABVgSYgBzFKPh8RatZI5B1/PQMJPdrkM6W9VNuBNzgoiAAAAAAOgAAAAAIAACAAAABdqMAEue3EO2LioVds7SF8xcLkI5mTgGH+J8rGO+N/oBAAAABUbDJbyIGrtoiCLouYm8iAQAAAAHNhhWEfe7D03bsUV4K7JNDmu3WRrW6W4iadjiUTd67VN1Ft/U7eq11eMTQHPjAQXmS0SN2CnKX8/tFBxCmUedc</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC2DKFWN4DMKyTFs0e/AuqhupUHXdMx9rbfMQCMHV/hoAAAAAAOgAAAAAIAACAAAADb8Ah4DpL1VcpIaXrhQygD/adU3Nxp45BgFbyvxbzx1xAAAADlRsrvZ6YecbWhj0kJ2+inQAAAANaL5QnLDcuYz0XpL6srHjBFUtEIbLFO49GCML2qvMSLWyOt1gpOni1AuP6D8K+7GsadwZPMexbtVPyLowvPmx4</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[xe.DW_UMG]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A64C76D3-D7D3-4263-9D94-C2C78F4AC680}"
+      DTS:ObjectName="xe.DW_UMG">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=xe;User ID=DW_UMG;Provider=OraOLEDB.Oracle.1;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD3h2aqBRm4gmpqYU5577c7gfh2ixe57zem10qh9jOAUwAAAAAOgAAAAAIAACAAAABkAJp65jAwcZjNzxDkOEQsOBJAUiwx+OTv3opkZ+F7NRAAAADwctxQDDSDVv/vnzHDm4BiQAAAANrdXnFFS54eigTJB7tI0N8KGN/LNMLNHCRviEhxxc0EqET4S7C0LIyA5Syyv7hhG7uNYNQSMbHAR94IMmmYUiM</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -506,7 +523,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABp7CadGEWVCO+fEkI3VKhhgyJf/qNYvY000nrfVBAghQAAAAAOgAAAAAIAACAAAAAroBadYmI0PjOzv27ec83V6mn6Zyq65G4hddOKE4TuVRAAAABDLd2vPC/UlZVpnw5PJvszQAAAANTUpUPd1MPx/Ws7Ki27vXvHMCfckJuQEBH/XG4hIbUeMcjqMS9kQCaaZhCs2L8JcMl7dF2BlZhyGZ5nc3/v69Q</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADDaJ42mCyyzos7n//p0HSPK4BHIv2DKYRBf2FbUlx18wAAAAAOgAAAAAIAACAAAACZz2lPxCHsTnJjRM1VRgJRuPM1gOQb8N+uuC73AOE6ZRAAAACe5Ud3c1reGSj8uAJaiFL+QAAAAFCBmBZlGxAfIoUqkj8G3PrsBmGqNgWLM1vS4kZeNQzTJGTQrafCeupX4Qs4HzEOoYT5vOAkrOg3azQILu3COzE</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -523,13 +540,43 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABZ+yJ+zMPas/sEXlS5I5VNalCS2s6Tzaal8CCZkEbdHgAAAAAOgAAAAAIAACAAAABvmoBnM3MjDJz5dUCNje2rh9vGFZS77A+GIGoWrOZ+zxAAAAD+zg84695jDpPI16S+zFBdQAAAAHHLOpkc0JWFM3PGEpcSgFP9gVATp44TR284r6uirChQOcO7QJSbUpdsTFzeTp4DLY5Dnx0tZ7Oa2iojTGZ8YKs</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnQv1AqP60UickYUMW+4qZAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABhaf60TVmc/O8hDSTe0lSNbPk/QMMXw1AAytKDTkFOWAAAAAAOgAAAAAIAACAAAABlLKqd5kVzozPTuh4e5gQ+CGiEjD/oK3pyfkTQzxSfixAAAADs4Y9YuKmps7cdO4V880ayQAAAALUI8KAimGQJQHMF6y8VQWjzLguXumSr327DmorIBTq4qjbZo8U7kIKRzqrCQjJU4/o4u2A1KKbDsEHPtyj2hYQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\CARGA_DATAWAREHOUSE"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Contenedor de secuencias"
+      DTS:DTSID="{D5506A6A-5090-45CE-A787-8151B03A9105}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CARGA_DATAWAREHOUSE">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\CARGA_DATAWAREHOUSE\CARGA_FULL"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Tarea Ejecutar SQL"
+          DTS:DTSID="{E75AABAD-72AB-4294-89BA-64F1D19BB09D}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="CARGA_FULL"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{A64C76D3-D7D3-4263-9D94-C2C78F4AC680}"
+              SQLTask:BypassPrepare="False"
+              SQLTask:SqlStatementSource="BEGIN&#xA;    PRC_DW_CARGA_FULL;&#xA;END;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\CARGA_ODS"
       DTS:CreationName="STOCK:SEQUENCE"
@@ -8592,7 +8639,7 @@
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_ASIGNACIONES\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[NOTA_FINAL]" />
                         <inputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ASIGNACIONES\Data Conversion.Inputs[Data Conversion Input].Columns[ESTADO]"
-                          cachedDataType="bool"
+                          cachedDataType="i4"
                           cachedName="ESTADO"
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_ASIGNACIONES\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[ESTADO]" />
                       </inputColumns>
@@ -9078,7 +9125,18 @@
                       description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT
+    ID_ASIGNACION,
+    ID_ESTUDIANTE,
+    ID_HORARIO,
+    FECHA_ASIGNACION,
+    ID_ESTADO_ASIGNACION,
+    FECHA_RETIRO,
+    MOTIVO_RETIRO,
+    FECHA_CIERRE,
+    NOTA_FINAL,
+    CASE WHEN ESTADO = 1 THEN 1 ELSE 0 END AS ESTADO
+FROM ASIGNACIONES</property>
                     <property
                       dataType="System.Int32"
                       description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
@@ -9097,7 +9155,7 @@
                       dataType="System.Int32"
                       description="Especificar el modo de recuperar información de columnas externas"
                       name="AccessMode"
-                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">0</property>
+                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
                     <property
                       dataType="System.String"
                       name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
@@ -9201,7 +9259,7 @@
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ASIGNACIONES\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[ESTADO]"
-                          dataType="bool"
+                          dataType="i4"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\SQLSERVER\DFT_STG_SQL_ASIGNACIONES\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[ESTADO]"
@@ -9252,7 +9310,7 @@
                           scale="2" />
                         <externalMetadataColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ASIGNACIONES\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[ESTADO]"
-                          dataType="bool"
+                          dataType="i4"
                           name="ESTADO" />
                       </externalMetadataColumns>
                     </output>
@@ -9311,7 +9369,7 @@
                           scale="2" />
                         <outputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ASIGNACIONES\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ESTADO]"
-                          dataType="bool"
+                          dataType="i4"
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_ASIGNACIONES\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ESTADO]"
                           name="ESTADO" />
                         <outputColumn
@@ -9398,22 +9456,22 @@
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[DESCRIPCION]" />
                         <inputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Data Conversion 1.Inputs[Data Conversion Input].Columns[CUENTA_COMO_DESERCION]"
-                          cachedDataType="bool"
+                          cachedDataType="i4"
                           cachedName="CUENTA_COMO_DESERCION"
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[CUENTA_COMO_DESERCION]" />
                         <inputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Data Conversion 1.Inputs[Data Conversion Input].Columns[AFECTA_PROMEDIO]"
-                          cachedDataType="bool"
+                          cachedDataType="i4"
                           cachedName="AFECTA_PROMEDIO"
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[AFECTA_PROMEDIO]" />
                         <inputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Data Conversion 1.Inputs[Data Conversion Input].Columns[GENERA_COBRO]"
-                          cachedDataType="bool"
+                          cachedDataType="i4"
                           cachedName="GENERA_COBRO"
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[GENERA_COBRO]" />
                         <inputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Data Conversion 1.Inputs[Data Conversion Input].Columns[ESTADO]"
-                          cachedDataType="bool"
+                          cachedDataType="i4"
                           cachedName="ESTADO"
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[ESTADO]" />
                       </inputColumns>
@@ -9839,7 +9897,16 @@
                       description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT
+    ID_ESTADO_ASIGNACION,
+    CODIGO,
+    NOMBRE,
+    DESCRIPCION,
+    CASE WHEN CUENTA_COMO_DESERCION = 1 THEN 1 ELSE 0 END AS CUENTA_COMO_DESERCION,
+    CASE WHEN AFECTA_PROMEDIO = 1 THEN 1 ELSE 0 END AS AFECTA_PROMEDIO,
+    CASE WHEN GENERA_COBRO = 1 THEN 1 ELSE 0 END AS GENERA_COBRO,
+    CASE WHEN ESTADO = 1 THEN 1 ELSE 0 END AS ESTADO
+FROM ESTADOS_ASIGNACION</property>
                     <property
                       dataType="System.Int32"
                       description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
@@ -9858,7 +9925,7 @@
                       dataType="System.Int32"
                       description="Especificar el modo de recuperar información de columnas externas"
                       name="AccessMode"
-                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">0</property>
+                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
                     <property
                       dataType="System.String"
                       name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
@@ -9917,7 +9984,7 @@
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[CUENTA_COMO_DESERCION]"
-                          dataType="bool"
+                          dataType="i4"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[CUENTA_COMO_DESERCION]"
@@ -9926,7 +9993,7 @@
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[AFECTA_PROMEDIO]"
-                          dataType="bool"
+                          dataType="i4"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[AFECTA_PROMEDIO]"
@@ -9935,7 +10002,7 @@
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[GENERA_COBRO]"
-                          dataType="bool"
+                          dataType="i4"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[GENERA_COBRO]"
@@ -9944,7 +10011,7 @@
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[ESTADO]"
-                          dataType="bool"
+                          dataType="i4"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[ESTADO]"
@@ -9975,19 +10042,19 @@
                           name="DESCRIPCION" />
                         <externalMetadataColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[CUENTA_COMO_DESERCION]"
-                          dataType="bool"
+                          dataType="i4"
                           name="CUENTA_COMO_DESERCION" />
                         <externalMetadataColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[AFECTA_PROMEDIO]"
-                          dataType="bool"
+                          dataType="i4"
                           name="AFECTA_PROMEDIO" />
                         <externalMetadataColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[GENERA_COBRO]"
-                          dataType="bool"
+                          dataType="i4"
                           name="GENERA_COBRO" />
                         <externalMetadataColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[ESTADO]"
-                          dataType="bool"
+                          dataType="i4"
                           name="ESTADO" />
                       </externalMetadataColumns>
                     </output>
@@ -10021,22 +10088,22 @@
                           name="DESCRIPCION" />
                         <outputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[CUENTA_COMO_DESERCION]"
-                          dataType="bool"
+                          dataType="i4"
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[CUENTA_COMO_DESERCION]"
                           name="CUENTA_COMO_DESERCION" />
                         <outputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[AFECTA_PROMEDIO]"
-                          dataType="bool"
+                          dataType="i4"
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[AFECTA_PROMEDIO]"
                           name="AFECTA_PROMEDIO" />
                         <outputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[GENERA_COBRO]"
-                          dataType="bool"
+                          dataType="i4"
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[GENERA_COBRO]"
                           name="GENERA_COBRO" />
                         <outputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ESTADO]"
-                          dataType="bool"
+                          dataType="i4"
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ESTADO]"
                           name="ESTADO" />
                         <outputColumn
@@ -10156,7 +10223,7 @@
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_ESTUDIANTES\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[ID_SEDE]" />
                         <inputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTUDIANTES\Data Conversion 1.Inputs[Data Conversion Input].Columns[ESTADO]"
-                          cachedDataType="bool"
+                          cachedDataType="i4"
                           cachedName="ESTADO"
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_ESTUDIANTES\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[ESTADO]" />
                         <inputColumn
@@ -10716,7 +10783,20 @@
                       description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT
+    ID_ESTUDIANTE,
+    CARNET,
+    NOMBRE,
+    APELLIDO,
+    EMAIL,
+    DIRECCION,
+    TELEFONO,
+    ID_FACULTAD,
+    ID_CARRERA,
+    ID_SEDE,
+    CASE WHEN ESTADO = 1 THEN 1 ELSE 0 END AS ESTADO,
+    FECHA_CREACION
+FROM ESTUDIANTES</property>
                     <property
                       dataType="System.Int32"
                       description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
@@ -10735,7 +10815,7 @@
                       dataType="System.Int32"
                       description="Especificar el modo de recuperar información de columnas externas"
                       name="AccessMode"
-                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">0</property>
+                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
                     <property
                       dataType="System.String"
                       name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
@@ -10851,7 +10931,7 @@
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTUDIANTES\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[ESTADO]"
-                          dataType="bool"
+                          dataType="i4"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\SQLSERVER\DFT_STG_SQL_ESTUDIANTES\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[ESTADO]"
@@ -10918,7 +10998,7 @@
                           name="ID_SEDE" />
                         <externalMetadataColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTUDIANTES\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[ESTADO]"
-                          dataType="bool"
+                          dataType="i4"
                           name="ESTADO" />
                         <externalMetadataColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTUDIANTES\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[FECHA_CREACION]"
@@ -10989,7 +11069,7 @@
                           name="ID_SEDE" />
                         <outputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_ESTUDIANTES\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ESTADO]"
-                          dataType="bool"
+                          dataType="i4"
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_ESTUDIANTES\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ESTADO]"
                           name="ESTADO" />
                         <outputColumn
@@ -11094,7 +11174,7 @@
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_EVALUACIONES\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[ORDEN]" />
                         <inputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_EVALUACIONES\Data Conversion.Inputs[Data Conversion Input].Columns[ESTADO]"
-                          cachedDataType="bool"
+                          cachedDataType="i4"
                           cachedName="ESTADO"
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_EVALUACIONES\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[ESTADO]" />
                       </inputColumns>
@@ -11493,7 +11573,15 @@
                       description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT
+    ID_EVALUACION,
+    CODIGO,
+    NOMBRE,
+    PORCENTAJE,
+    PUNTEO_MAXIMO,
+    ORDEN,
+    CASE WHEN ESTADO = 1 THEN 1 ELSE 0 END AS ESTADO
+FROM EVALUACIONES</property>
                     <property
                       dataType="System.Int32"
                       description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
@@ -11512,7 +11600,7 @@
                       dataType="System.Int32"
                       description="Especificar el modo de recuperar información de columnas externas"
                       name="AccessMode"
-                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">0</property>
+                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
                     <property
                       dataType="System.String"
                       name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
@@ -11592,7 +11680,7 @@
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_EVALUACIONES\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[ESTADO]"
-                          dataType="bool"
+                          dataType="i4"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\SQLSERVER\DFT_STG_SQL_EVALUACIONES\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[ESTADO]"
@@ -11634,7 +11722,7 @@
                           name="ORDEN" />
                         <externalMetadataColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_EVALUACIONES\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[ESTADO]"
-                          dataType="bool"
+                          dataType="i4"
                           name="ESTADO" />
                       </externalMetadataColumns>
                     </output>
@@ -11681,7 +11769,7 @@
                           name="ORDEN" />
                         <outputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_EVALUACIONES\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ESTADO]"
-                          dataType="bool"
+                          dataType="i4"
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_EVALUACIONES\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ESTADO]"
                           name="ESTADO" />
                         <outputColumn
@@ -11772,7 +11860,7 @@
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_NOTAS\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[FECHA_REGISTRO]" />
                         <inputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_NOTAS\Data Conversion.Inputs[Data Conversion Input].Columns[ESTADO]"
-                          cachedDataType="bool"
+                          cachedDataType="i4"
                           cachedName="ESTADO"
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_NOTAS\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[ESTADO]" />
                       </inputColumns>
@@ -12132,7 +12220,14 @@
                       description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT
+    ID_NOTA,
+    ID_ASIGNACION,
+    ID_EVALUACION,
+    NOTA_OBTENIDA,
+    FECHA_REGISTRO,
+    CASE WHEN ESTADO = 1 THEN 1 ELSE 0 END AS ESTADO
+FROM NOTAS</property>
                     <property
                       dataType="System.Int32"
                       description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
@@ -12151,7 +12246,7 @@
                       dataType="System.Int32"
                       description="Especificar el modo de recuperar información de columnas externas"
                       name="AccessMode"
-                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">0</property>
+                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
                     <property
                       dataType="System.String"
                       name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
@@ -12218,7 +12313,7 @@
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_NOTAS\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[ESTADO]"
-                          dataType="bool"
+                          dataType="i4"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\SQLSERVER\DFT_STG_SQL_NOTAS\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[ESTADO]"
@@ -12252,7 +12347,7 @@
                           name="FECHA_REGISTRO" />
                         <externalMetadataColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_NOTAS\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[ESTADO]"
-                          dataType="bool"
+                          dataType="i4"
                           name="ESTADO" />
                       </externalMetadataColumns>
                     </output>
@@ -12290,7 +12385,7 @@
                           name="FECHA_REGISTRO" />
                         <outputColumn
                           refId="Package\SQLSERVER\DFT_STG_SQL_NOTAS\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ESTADO]"
-                          dataType="bool"
+                          dataType="i4"
                           lineageId="Package\SQLSERVER\DFT_STG_SQL_NOTAS\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ESTADO]"
                           name="ESTADO" />
                         <outputColumn
@@ -16358,6 +16453,14 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 5"
       DTS:To="Package\CARGA_ODS" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{C334A23C-6371-4002-A3C0-FDFE9BB15B9F}"
+      DTS:From="Package\CARGA_ODS"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 6"
+      DTS:To="Package\CARGA_DATAWAREHOUSE" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
@@ -16370,7 +16473,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="128" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="203,42"
           Id="Package\CARGA_ODS\CARGA_ODS_CATALOGOS"
@@ -16485,7 +16588,7 @@
           PanelSize="323,466"
           Size="323,509"
           Id="Package\CARGA_ODS"
-          TopLeft="1990.89743589744,276.831501831502" />
+          TopLeft="1985.89743589744,159.331501831502" />
         <NodeLayout
           Size="204,42"
           Id="Package\EXCEL\DFT_STG_XLS_JORNADAS"
@@ -17125,30 +17228,51 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 5]"
-          TopLeft="1917.28571428571,406.857142857143">
+          TopLeft="1917.28571428571,410.344322344323">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="73.6117216117302,124.474358974359"
+              EndConnector="68.6117216117302,0"
               Start="0,0"
-              End="66.1117216117302,124.474358974359">
+              End="61.1117216117302,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="32.8058608058651,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="32.8058608058651,0"
-                    Point2="36.8058608058651,0"
-                    Point3="36.8058608058651,4" />
+                    End="61.1117216117302,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="141,42"
+          Id="Package\CARGA_DATAWAREHOUSE\CARGA_FULL"
+          TopLeft="70.25,28.75" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="273,124"
+          Size="273,168"
+          Id="Package\CARGA_DATAWAREHOUSE"
+          TopLeft="2351.25,325" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 6]"
+          TopLeft="2308.89743589744,411.415750915751">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="42.3525641025599,0"
+              Start="0,0"
+              End="34.8525641025599,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="36.8058608058651,120.474358974359" />
-                  <mssgle:CubicBezierSegment
-                    Point1="36.8058608058651,120.474358974359"
-                    Point2="36.8058608058651,124.474358974359"
-                    Point3="40.8058608058651,124.474358974359" />
-                  <mssgle:LineSegment
-                    End="66.1117216117302,124.474358974359" />
+                    End="34.8525641025599,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -18127,7 +18251,7 @@
     design-time-name="Package\SQLSERVER\DFT_STG_SQL_ASIGNACIONES">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="171,42"
           Id="Package\SQLSERVER\DFT_STG_SQL_ASIGNACIONES\OLE DB Destination"
@@ -18159,9 +18283,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18183,9 +18305,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -18216,7 +18336,7 @@
     design-time-name="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="171,42"
           Id="Package\SQLSERVER\DFT_STG_SQL_ESTADOS_ASIGNACION\OLE DB Destination"
@@ -18248,9 +18368,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18272,9 +18390,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -18305,7 +18421,7 @@
     design-time-name="Package\SQLSERVER\DFT_STG_SQL_ESTUDIANTES">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="172,42"
           Id="Package\SQLSERVER\DFT_STG_SQL_ESTUDIANTES\Origen de ADO NET"
@@ -18337,9 +18453,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18361,9 +18475,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -18394,7 +18506,7 @@
     design-time-name="Package\SQLSERVER\DFT_STG_SQL_EVALUACIONES">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="172,42"
           Id="Package\SQLSERVER\DFT_STG_SQL_EVALUACIONES\Origen de ADO NET"
@@ -18426,9 +18538,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18450,9 +18560,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -18483,7 +18591,7 @@
     design-time-name="Package\SQLSERVER\DFT_STG_SQL_NOTAS">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="172,42"
           Id="Package\SQLSERVER\DFT_STG_SQL_NOTAS\Origen de ADO NET"
@@ -18515,9 +18623,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18539,9 +18645,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
