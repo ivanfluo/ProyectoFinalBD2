@@ -1,0 +1,440 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f9e56985-7923-4843-a2bd-2f96b44fceef" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Vista_Asignaciones</ID>
+  <Name>Vista_Asignaciones</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>xe</DataSourceID>
+  <Schema>
+    <xs:schema id="Vista_Asignaciones" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Vista_Asignaciones" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="419944b2-0f4d-42b5-b02a-1e799d5e5653">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="DW_UMG_FACT_ASIGNACIONES" msprop:DbTableName="FACT_ASIGNACIONES" msprop:FriendlyName="FACT_ASIGNACIONES" msprop:TableType="Table" msprop:DbSchemaName="DW_UMG" msprop:design-time-name="6427fb00-1f11-40c6-9932-1e334cf0f254">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_ASIGNACION" msprop:FriendlyName="ID_ASIGNACION" msprop:DbColumnName="ID_ASIGNACION" msprop:design-time-name="53f69437-61cb-41cb-add3-045c7823c017" type="xs:long" />
+                  <xs:element name="SK_TIEMPO_ASIG" msprop:FriendlyName="SK_TIEMPO_ASIG" msprop:DbColumnName="SK_TIEMPO_ASIG" msprop:design-time-name="eb8f5449-d1a4-4f99-a742-a83c819ac962" type="xs:long" />
+                  <xs:element name="SK_ESTUDIANTE" msprop:FriendlyName="SK_ESTUDIANTE" msprop:DbColumnName="SK_ESTUDIANTE" msprop:design-time-name="82cedd14-7a97-4dc6-9d1e-3456838b8b29" type="xs:long" />
+                  <xs:element name="SK_CURSO" msprop:FriendlyName="SK_CURSO" msprop:DbColumnName="SK_CURSO" msprop:design-time-name="cc5b18f5-f770-476d-990f-46bb44fe686a" type="xs:long" />
+                  <xs:element name="SK_CATEDRATICO" msprop:FriendlyName="SK_CATEDRATICO" msprop:DbColumnName="SK_CATEDRATICO" msprop:design-time-name="46449689-51da-4d6d-9117-9ca3c0d65851" type="xs:long" />
+                  <xs:element name="SK_PERIODO" msprop:FriendlyName="SK_PERIODO" msprop:DbColumnName="SK_PERIODO" msprop:design-time-name="3440be7e-a9c2-4cff-a8cb-d07501273eaa" type="xs:long" />
+                  <xs:element name="SK_SEDE" msprop:FriendlyName="SK_SEDE" msprop:DbColumnName="SK_SEDE" msprop:design-time-name="e061db6e-9c91-42d9-95b5-67bccb34eaa3" type="xs:long" />
+                  <xs:element name="SK_JORNADA" msprop:FriendlyName="SK_JORNADA" msprop:DbColumnName="SK_JORNADA" msprop:design-time-name="b567b44b-5ed7-48bc-b1e1-acf372a07922" type="xs:long" />
+                  <xs:element name="SK_ESTADO_ASIG" msprop:FriendlyName="SK_ESTADO_ASIG" msprop:DbColumnName="SK_ESTADO_ASIG" msprop:design-time-name="2917fc37-8e7d-4748-89fb-840e6cabd5d1" type="xs:long" />
+                  <xs:element name="NOTA_FINAL" msprop:FriendlyName="NOTA_FINAL" msprop:DbColumnName="NOTA_FINAL" msprop:design-time-name="dab11bd7-8324-4afb-98f9-0c7c79c1a5cf" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="IND_APROBADO" msprop:FriendlyName="IND_APROBADO" msprop:DbColumnName="IND_APROBADO" msprop:design-time-name="8005d7b9-f7c9-410e-a323-65aaa2a90e19" type="xs:long" minOccurs="0" />
+                  <xs:element name="IND_REPROBADO" msprop:FriendlyName="IND_REPROBADO" msprop:DbColumnName="IND_REPROBADO" msprop:design-time-name="c1e5d5e1-8fae-41ff-85ed-b5191e0f8d03" type="xs:long" minOccurs="0" />
+                  <xs:element name="IND_DESERCION_FORMAL" msprop:FriendlyName="IND_DESERCION_FORMAL" msprop:DbColumnName="IND_DESERCION_FORMAL" msprop:design-time-name="7edb319f-cba6-4564-9dfc-de9fd241f6fe" type="xs:long" minOccurs="0" />
+                  <xs:element name="CANT_ASIGNACIONES" msprop:FriendlyName="CANT_ASIGNACIONES" msprop:DbColumnName="CANT_ASIGNACIONES" msprop:design-time-name="d8b33399-29a3-45fa-b9f7-2b95625bf1e7" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_UMG_DIM_CATEDRATICO" msprop:DbTableName="DIM_CATEDRATICO" msprop:FriendlyName="DIM_CATEDRATICO" msprop:TableType="Table" msprop:DbSchemaName="DW_UMG" msprop:design-time-name="c5099497-22c6-4631-8f9f-e642053d37a7">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_CATEDRATICO" msprop:FriendlyName="SK_CATEDRATICO" msprop:DbColumnName="SK_CATEDRATICO" msprop:design-time-name="ee0e6baf-aa57-431d-92d9-55d4c0bcf518" type="xs:long" />
+                  <xs:element name="ID_CATEDRATICO" msprop:FriendlyName="ID_CATEDRATICO" msprop:DbColumnName="ID_CATEDRATICO" msprop:design-time-name="b3873ce7-1383-474d-abd8-ae8e8f59b604" type="xs:long" minOccurs="0" />
+                  <xs:element name="CODIGO_CATEDRATICO" msprop:FriendlyName="CODIGO_CATEDRATICO" msprop:DbColumnName="CODIGO_CATEDRATICO" msprop:design-time-name="e194e425-8c19-47f9-9c74-7ac99e828c1f" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOMBRE_COMPLETO" msprop:FriendlyName="NOMBRE_COMPLETO" msprop:DbColumnName="NOMBRE_COMPLETO" msprop:design-time-name="8f641fa5-3a9d-42cc-92c6-e4e4473e1053" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="250" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EMAIL" msprop:FriendlyName="EMAIL" msprop:DbColumnName="EMAIL" msprop:design-time-name="2b744764-0660-4550-81bb-773a65be5a63" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID_FACULTAD" msprop:FriendlyName="ID_FACULTAD" msprop:DbColumnName="ID_FACULTAD" msprop:design-time-name="2b6e880e-bde7-4a91-a3fe-ac51f241865b" type="xs:long" minOccurs="0" />
+                  <xs:element name="NOMBRE_FACULTAD" msprop:FriendlyName="NOMBRE_FACULTAD" msprop:DbColumnName="NOMBRE_FACULTAD" msprop:design-time-name="928bd822-00dd-4fbf-ae8d-35498af55828" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ESTADO" msprop:FriendlyName="ESTADO" msprop:DbColumnName="ESTADO" msprop:design-time-name="da428333-4453-462d-8fdf-cc1325bacf66" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_UMG_DIM_CURSO" msprop:DbTableName="DIM_CURSO" msprop:FriendlyName="DIM_CURSO" msprop:TableType="Table" msprop:DbSchemaName="DW_UMG" msprop:design-time-name="3f3cd8e9-36af-448b-a7b6-3d68dda6bae0">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_CURSO" msprop:FriendlyName="SK_CURSO" msprop:DbColumnName="SK_CURSO" msprop:design-time-name="c1e2caac-cab2-4f4d-bb1c-e740ef44ce48" type="xs:long" />
+                  <xs:element name="ID_CURSO" msprop:FriendlyName="ID_CURSO" msprop:DbColumnName="ID_CURSO" msprop:design-time-name="7a2289b0-2ffc-42c5-b299-5c5312cff2d3" type="xs:long" minOccurs="0" />
+                  <xs:element name="CODIGO_CURSO" msprop:FriendlyName="CODIGO_CURSO" msprop:DbColumnName="CODIGO_CURSO" msprop:design-time-name="1a1975e5-e616-47a2-afba-54f523d94854" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOMBRE_CURSO" msprop:FriendlyName="NOMBRE_CURSO" msprop:DbColumnName="NOMBRE_CURSO" msprop:design-time-name="5dcece27-5583-420b-89c7-0f97488ce498" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CREDITOS" msprop:FriendlyName="CREDITOS" msprop:DbColumnName="CREDITOS" msprop:design-time-name="c9f59276-965b-42e5-9b37-e9c99cbdb724" type="xs:long" minOccurs="0" />
+                  <xs:element name="ID_FACULTAD" msprop:FriendlyName="ID_FACULTAD" msprop:DbColumnName="ID_FACULTAD" msprop:design-time-name="3fe258d6-012f-4c73-937d-2280e1a1d7b4" type="xs:long" minOccurs="0" />
+                  <xs:element name="NOMBRE_FACULTAD" msprop:FriendlyName="NOMBRE_FACULTAD" msprop:DbColumnName="NOMBRE_FACULTAD" msprop:design-time-name="99956775-2874-4d0c-8340-0ffc9e94e732" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AREA_FACULTAD" msprop:FriendlyName="AREA_FACULTAD" msprop:DbColumnName="AREA_FACULTAD" msprop:design-time-name="18b1b5d5-831f-4234-8f99-74ff7b04a1bd" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ESTADO" msprop:FriendlyName="ESTADO" msprop:DbColumnName="ESTADO" msprop:design-time-name="d9ba53f9-5189-425a-8d9d-021930b22fd6" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_UMG_DIM_ESTADO_ASIG" msprop:DbTableName="DIM_ESTADO_ASIG" msprop:FriendlyName="DIM_ESTADO_ASIG" msprop:TableType="Table" msprop:DbSchemaName="DW_UMG" msprop:design-time-name="37196bac-d570-4bf2-849a-2454ba6456db">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_ESTADO_ASIG" msprop:FriendlyName="SK_ESTADO_ASIG" msprop:DbColumnName="SK_ESTADO_ASIG" msprop:design-time-name="80b04aef-eeea-48d7-9b02-1e75bdb2d92f" type="xs:long" />
+                  <xs:element name="ID_ESTADO_ASIGNACION" msprop:FriendlyName="ID_ESTADO_ASIGNACION" msprop:DbColumnName="ID_ESTADO_ASIGNACION" msprop:design-time-name="24b4cfff-91f6-4167-a8b0-817b281389d1" type="xs:long" minOccurs="0" />
+                  <xs:element name="CODIGO" msprop:FriendlyName="CODIGO" msprop:DbColumnName="CODIGO" msprop:design-time-name="e6e9de13-aced-4db8-ba05-36d3551bdb60" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOMBRE" msprop:FriendlyName="NOMBRE" msprop:DbColumnName="NOMBRE" msprop:design-time-name="21e62ee2-3343-4215-8a75-ee129fe8c42a" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CUENTA_COMO_DESERCION" msprop:FriendlyName="CUENTA_COMO_DESERCION" msprop:DbColumnName="CUENTA_COMO_DESERCION" msprop:design-time-name="061feac0-0007-41a2-8ab1-e089cfcc71d4" type="xs:long" minOccurs="0" />
+                  <xs:element name="AFECTA_PROMEDIO" msprop:FriendlyName="AFECTA_PROMEDIO" msprop:DbColumnName="AFECTA_PROMEDIO" msprop:design-time-name="aa203977-7211-465a-94ab-13e80e18af9f" type="xs:long" minOccurs="0" />
+                  <xs:element name="GENERA_COBRO" msprop:FriendlyName="GENERA_COBRO" msprop:DbColumnName="GENERA_COBRO" msprop:design-time-name="d5f9e395-8802-4d5f-8c1f-0f7ac17c4d9f" type="xs:long" minOccurs="0" />
+                  <xs:element name="ESTADO" msprop:FriendlyName="ESTADO" msprop:DbColumnName="ESTADO" msprop:design-time-name="cb1e49bd-4167-4542-84d7-3b49767f3c56" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_UMG_DIM_ESTUDIANTE" msprop:DbTableName="DIM_ESTUDIANTE" msprop:FriendlyName="DIM_ESTUDIANTE" msprop:TableType="Table" msprop:DbSchemaName="DW_UMG" msprop:design-time-name="8e26db6e-cbd2-4aad-8725-5ee10d248056">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_ESTUDIANTE" msprop:FriendlyName="SK_ESTUDIANTE" msprop:DbColumnName="SK_ESTUDIANTE" msprop:design-time-name="b7639082-3609-4963-93b4-5280d9c5e49c" type="xs:long" />
+                  <xs:element name="ID_ESTUDIANTE" msprop:FriendlyName="ID_ESTUDIANTE" msprop:DbColumnName="ID_ESTUDIANTE" msprop:design-time-name="a5fb0b73-e9f7-47e5-8eb7-5fb486f295ab" type="xs:long" minOccurs="0" />
+                  <xs:element name="CARNET" msprop:FriendlyName="CARNET" msprop:DbColumnName="CARNET" msprop:design-time-name="2ca98aea-7559-462e-a3ce-8e490694628c" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOMBRE_COMPLETO" msprop:FriendlyName="NOMBRE_COMPLETO" msprop:DbColumnName="NOMBRE_COMPLETO" msprop:design-time-name="45a7b1f1-a482-45e3-a390-d7426ba5bff8" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="250" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EMAIL" msprop:FriendlyName="EMAIL" msprop:DbColumnName="EMAIL" msprop:design-time-name="faf4a7e7-435e-4aea-be4c-6e72a15da235" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TELEFONO" msprop:FriendlyName="TELEFONO" msprop:DbColumnName="TELEFONO" msprop:design-time-name="cd63b15e-fa2b-494b-8cf4-937403ed4026" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID_FACULTAD" msprop:FriendlyName="ID_FACULTAD" msprop:DbColumnName="ID_FACULTAD" msprop:design-time-name="391c2c9a-f19f-4796-ad1a-fac0425f0a23" type="xs:long" minOccurs="0" />
+                  <xs:element name="NOMBRE_FACULTAD" msprop:FriendlyName="NOMBRE_FACULTAD" msprop:DbColumnName="NOMBRE_FACULTAD" msprop:design-time-name="9d0fd15d-7514-493c-9418-0d0178aa59a6" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID_CARRERA" msprop:FriendlyName="ID_CARRERA" msprop:DbColumnName="ID_CARRERA" msprop:design-time-name="9609d084-31ca-4eb9-9952-f4ff4d4b5760" type="xs:long" minOccurs="0" />
+                  <xs:element name="NOMBRE_CARRERA" msprop:FriendlyName="NOMBRE_CARRERA" msprop:DbColumnName="NOMBRE_CARRERA" msprop:design-time-name="e78a6afc-09bc-4306-a4ea-b62e8714ff02" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID_SEDE" msprop:FriendlyName="ID_SEDE" msprop:DbColumnName="ID_SEDE" msprop:design-time-name="026f0664-2153-4cfa-a52a-211e6828b37c" type="xs:long" minOccurs="0" />
+                  <xs:element name="NOMBRE_SEDE" msprop:FriendlyName="NOMBRE_SEDE" msprop:DbColumnName="NOMBRE_SEDE" msprop:design-time-name="a2821b07-7968-4ffe-955a-c8e58d26e5d3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ESTADO" msprop:FriendlyName="ESTADO" msprop:DbColumnName="ESTADO" msprop:design-time-name="f67626c9-cbb3-4c21-8312-cd6d8799ec3d" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_UMG_DIM_JORNADA" msprop:DbTableName="DIM_JORNADA" msprop:FriendlyName="DIM_JORNADA" msprop:TableType="Table" msprop:DbSchemaName="DW_UMG" msprop:design-time-name="d700d4da-ef34-4986-bf99-5d6afabf3096">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_JORNADA" msprop:FriendlyName="SK_JORNADA" msprop:DbColumnName="SK_JORNADA" msprop:design-time-name="81ee1796-d2a4-4216-bc65-eff890527275" type="xs:long" />
+                  <xs:element name="ID_JORNADA" msprop:FriendlyName="ID_JORNADA" msprop:DbColumnName="ID_JORNADA" msprop:design-time-name="9e72ed97-8cb8-4431-927a-198e977596c1" type="xs:long" minOccurs="0" />
+                  <xs:element name="CODIGO" msprop:FriendlyName="CODIGO" msprop:DbColumnName="CODIGO" msprop:design-time-name="13bc36c0-64fd-40f4-b9f3-e04e3a1779eb" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOMBRE_JORNADA" msprop:FriendlyName="NOMBRE_JORNADA" msprop:DbColumnName="NOMBRE_JORNADA" msprop:design-time-name="2deee328-1edf-44b3-879e-ebd4d96a0ee8" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="HORA_INICIO" msprop:FriendlyName="HORA_INICIO" msprop:DbColumnName="HORA_INICIO" msprop:design-time-name="7a055b73-b3fb-4f75-aa1e-e48e71e6905b" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="HORA_FIN" msprop:FriendlyName="HORA_FIN" msprop:DbColumnName="HORA_FIN" msprop:design-time-name="7abe6bec-682e-487d-9651-d02e3815baf3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ESTADO" msprop:FriendlyName="ESTADO" msprop:DbColumnName="ESTADO" msprop:design-time-name="745616f0-7789-448c-8a5a-a35257ab76c8" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_UMG_DIM_PERIODO" msprop:DbTableName="DIM_PERIODO" msprop:FriendlyName="DIM_PERIODO" msprop:TableType="Table" msprop:DbSchemaName="DW_UMG" msprop:design-time-name="a4c19b98-9c1f-4bd3-ba3f-497c4646b1d7">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_PERIODO" msprop:FriendlyName="SK_PERIODO" msprop:DbColumnName="SK_PERIODO" msprop:design-time-name="a48353c4-3099-4390-8319-9240235204be" type="xs:long" />
+                  <xs:element name="ID_ANIO" msprop:FriendlyName="ID_ANIO" msprop:DbColumnName="ID_ANIO" msprop:design-time-name="afc58d59-e237-4014-9b79-708837cb6c00" type="xs:long" minOccurs="0" />
+                  <xs:element name="ANIO" msprop:FriendlyName="ANIO" msprop:DbColumnName="ANIO" msprop:design-time-name="764008f1-c0fc-4748-8c6e-6fb5552f5313" type="xs:long" minOccurs="0" />
+                  <xs:element name="ID_SEMESTRE" msprop:FriendlyName="ID_SEMESTRE" msprop:DbColumnName="ID_SEMESTRE" msprop:design-time-name="f760fd91-a84f-4bf3-a7e5-4a88d403b936" type="xs:long" minOccurs="0" />
+                  <xs:element name="SEMESTRE" msprop:FriendlyName="SEMESTRE" msprop:DbColumnName="SEMESTRE" msprop:design-time-name="3ab75e1f-15c6-4e2a-8fc1-06e85ab3e7da" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_UMG_DIM_SEDE" msprop:DbTableName="DIM_SEDE" msprop:FriendlyName="DIM_SEDE" msprop:TableType="Table" msprop:DbSchemaName="DW_UMG" msprop:design-time-name="af876ace-1d4d-4ac3-8480-eae1246bd532">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_SEDE" msprop:FriendlyName="SK_SEDE" msprop:DbColumnName="SK_SEDE" msprop:design-time-name="0b4ed997-cd51-45f9-9d23-efe9063530ee" type="xs:long" />
+                  <xs:element name="ID_SEDE" msprop:FriendlyName="ID_SEDE" msprop:DbColumnName="ID_SEDE" msprop:design-time-name="00025137-71fa-4fdb-b53f-f192d2706604" type="xs:long" minOccurs="0" />
+                  <xs:element name="CODIGO_SEDE" msprop:FriendlyName="CODIGO_SEDE" msprop:DbColumnName="CODIGO_SEDE" msprop:design-time-name="c4d78281-f1f7-4427-8765-88b744cfdd3b" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOMBRE_SEDE" msprop:FriendlyName="NOMBRE_SEDE" msprop:DbColumnName="NOMBRE_SEDE" msprop:design-time-name="081b41ad-64db-4485-b9ab-8abfe24ede80" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOMBRE_TIPO_SEDE" msprop:FriendlyName="NOMBRE_TIPO_SEDE" msprop:DbColumnName="NOMBRE_TIPO_SEDE" msprop:design-time-name="29977f80-ecb1-49e9-98c5-c9a85e2d31a4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID_MUNICIPIO" msprop:FriendlyName="ID_MUNICIPIO" msprop:DbColumnName="ID_MUNICIPIO" msprop:design-time-name="041f1a0e-6e23-4feb-8eaa-97abfd304ffc" type="xs:long" minOccurs="0" />
+                  <xs:element name="NOMBRE_MUNICIPIO" msprop:FriendlyName="NOMBRE_MUNICIPIO" msprop:DbColumnName="NOMBRE_MUNICIPIO" msprop:design-time-name="cc3f7b11-6689-4e2e-b548-6b64b20cb147" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID_DPTO" msprop:FriendlyName="ID_DPTO" msprop:DbColumnName="ID_DPTO" msprop:design-time-name="7af33519-c1c6-4067-bf16-e5fb4d6c06ed" type="xs:long" minOccurs="0" />
+                  <xs:element name="NOMBRE_DEPARTAMENTO" msprop:FriendlyName="NOMBRE_DEPARTAMENTO" msprop:DbColumnName="NOMBRE_DEPARTAMENTO" msprop:design-time-name="f0d6a5bc-720f-4791-a88a-7819a5b345cc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID_REGION" msprop:FriendlyName="ID_REGION" msprop:DbColumnName="ID_REGION" msprop:design-time-name="2bd77f72-af7f-4437-b744-c2ce92402931" type="xs:long" minOccurs="0" />
+                  <xs:element name="NOMBRE_REGION" msprop:FriendlyName="NOMBRE_REGION" msprop:DbColumnName="NOMBRE_REGION" msprop:design-time-name="e6d47938-3a25-4376-bb5e-9050f738d3ad" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PAIS" msprop:FriendlyName="PAIS" msprop:DbColumnName="PAIS" msprop:design-time-name="5fd24882-1871-439a-a0f7-32ce7b940ad4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_UMG_DIM_TIEMPO" msprop:DbTableName="DIM_TIEMPO" msprop:FriendlyName="DIM_TIEMPO" msprop:TableType="Table" msprop:DbSchemaName="DW_UMG" msprop:design-time-name="dc6aa632-cd2a-47e8-ac85-1cd1684cec2b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_TIEMPO" msprop:FriendlyName="SK_TIEMPO" msprop:DbColumnName="SK_TIEMPO" msprop:design-time-name="d0984d23-3464-455e-bf8e-ca7d05300dbe" type="xs:long" />
+                  <xs:element name="FECHA" msprop:FriendlyName="FECHA" msprop:DbColumnName="FECHA" msprop:design-time-name="3385802c-1de6-4d69-967b-1c868bb13ce2" type="xs:dateTime" />
+                  <xs:element name="ANIO" msprop:FriendlyName="ANIO" msprop:DbColumnName="ANIO" msprop:design-time-name="b8707914-b201-4bd7-be4f-4fbe9a1de00b" type="xs:long" minOccurs="0" />
+                  <xs:element name="MES" msprop:FriendlyName="MES" msprop:DbColumnName="MES" msprop:design-time-name="2e4ccf28-c297-4ba6-9e1a-4dfc2deba34f" type="xs:long" minOccurs="0" />
+                  <xs:element name="NOMBRE_MES" msprop:FriendlyName="NOMBRE_MES" msprop:DbColumnName="NOMBRE_MES" msprop:design-time-name="cdaefee6-1672-49a5-9b58-6341ad3f084d" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DIA" msprop:FriendlyName="DIA" msprop:DbColumnName="DIA" msprop:design-time-name="503b9c4d-20de-42f9-99d0-a233d8b83032" type="xs:long" minOccurs="0" />
+                  <xs:element name="TRIMESTRE" msprop:FriendlyName="TRIMESTRE" msprop:DbColumnName="TRIMESTRE" msprop:design-time-name="b6b393ce-e0c3-484f-b69a-55d185befaca" type="xs:long" minOccurs="0" />
+                  <xs:element name="SEMESTRE_CAL" msprop:FriendlyName="SEMESTRE_CAL" msprop:DbColumnName="SEMESTRE_CAL" msprop:design-time-name="4982a4a5-2a33-4efe-a6d5-128cc702af1d" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_UMG_FACT_ASIGNACIONES" />
+          <xs:field xpath="ID_ASIGNACION" />
+        </xs:unique>
+        <xs:unique name="DW_UMG_DIM_CATEDRATICO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_UMG_DIM_CATEDRATICO" />
+          <xs:field xpath="SK_CATEDRATICO" />
+        </xs:unique>
+        <xs:unique name="DW_UMG_DIM_CURSO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_UMG_DIM_CURSO" />
+          <xs:field xpath="SK_CURSO" />
+        </xs:unique>
+        <xs:unique name="DW_UMG_DIM_ESTADO_ASIG_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_UMG_DIM_ESTADO_ASIG" />
+          <xs:field xpath="SK_ESTADO_ASIG" />
+        </xs:unique>
+        <xs:unique name="DW_UMG_DIM_ESTUDIANTE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_UMG_DIM_ESTUDIANTE" />
+          <xs:field xpath="SK_ESTUDIANTE" />
+        </xs:unique>
+        <xs:unique name="DW_UMG_DIM_JORNADA_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_UMG_DIM_JORNADA" />
+          <xs:field xpath="SK_JORNADA" />
+        </xs:unique>
+        <xs:unique name="DW_UMG_DIM_PERIODO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_UMG_DIM_PERIODO" />
+          <xs:field xpath="SK_PERIODO" />
+        </xs:unique>
+        <xs:unique name="DW_UMG_DIM_SEDE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_UMG_DIM_SEDE" />
+          <xs:field xpath="SK_SEDE" />
+        </xs:unique>
+        <xs:unique name="DW_UMG_DIM_TIEMPO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_UMG_DIM_TIEMPO" />
+          <xs:field xpath="SK_TIEMPO" />
+        </xs:unique>
+        <xs:keyref name="FK_FA_TIEMPO" refer="DW_UMG_DIM_TIEMPO_Constraint1">
+          <xs:selector xpath=".//DW_UMG_FACT_ASIGNACIONES" />
+          <xs:field xpath="SK_TIEMPO_ASIG" />
+        </xs:keyref>
+        <xs:keyref name="FK_FA_PERIODO" refer="DW_UMG_DIM_PERIODO_Constraint1">
+          <xs:selector xpath=".//DW_UMG_FACT_ASIGNACIONES" />
+          <xs:field xpath="SK_PERIODO" />
+        </xs:keyref>
+        <xs:keyref name="FK_FA_CATEDRATICO" refer="DW_UMG_DIM_CATEDRATICO_Constraint1">
+          <xs:selector xpath=".//DW_UMG_FACT_ASIGNACIONES" />
+          <xs:field xpath="SK_CATEDRATICO" />
+        </xs:keyref>
+        <xs:keyref name="FK_FA_SEDE" refer="DW_UMG_DIM_SEDE_Constraint1">
+          <xs:selector xpath=".//DW_UMG_FACT_ASIGNACIONES" />
+          <xs:field xpath="SK_SEDE" />
+        </xs:keyref>
+        <xs:keyref name="FK_FA_ESTADO" refer="DW_UMG_DIM_ESTADO_ASIG_Constraint1">
+          <xs:selector xpath=".//DW_UMG_FACT_ASIGNACIONES" />
+          <xs:field xpath="SK_ESTADO_ASIG" />
+        </xs:keyref>
+        <xs:keyref name="FK_FA_CURSO" refer="DW_UMG_DIM_CURSO_Constraint1">
+          <xs:selector xpath=".//DW_UMG_FACT_ASIGNACIONES" />
+          <xs:field xpath="SK_CURSO" />
+        </xs:keyref>
+        <xs:keyref name="FK_FA_JORNADA" refer="DW_UMG_DIM_JORNADA_Constraint1">
+          <xs:selector xpath=".//DW_UMG_FACT_ASIGNACIONES" />
+          <xs:field xpath="SK_JORNADA" />
+        </xs:keyref>
+        <xs:keyref name="FK_FA_ESTUDIANTE" refer="DW_UMG_DIM_ESTUDIANTE_Constraint1">
+          <xs:selector xpath=".//DW_UMG_FACT_ASIGNACIONES" />
+          <xs:field xpath="SK_ESTUDIANTE" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Vista_Asignaciones xmlns="" />
+  </Schema>
+</DataSourceView>

@@ -1,0 +1,340 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0b996461-4715-49d8-8651-af3bad830aa0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Cubo_Mora</ID>
+  <Name>Cubo_Mora</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="dccb193c-6b9c-4430-9e83-4703e0f59e36">
+      <ID>DIM CATEDRATICO 2</ID>
+      <Name>DIM CATEDRATICO 2</Name>
+      <DimensionID>DIM CATEDRATICO 2</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b3aa5ddf-c4ae-4716-a957-7828b57712c6">
+          <AttributeID>SK CATEDRATICO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="c2377083-e20e-468a-a213-39c0160cbbdb">
+      <ID>DIM CURSO 2</ID>
+      <Name>DIM CURSO 2</Name>
+      <DimensionID>DIM CURSO 2</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="64be3985-51b2-4f4c-9c61-9e04e7e5dab0">
+          <AttributeID>SK CURSO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="cabb4cb4-d6c5-434f-bb0e-e447fec9611a">
+      <ID>DIM ESTUDIANTE 2</ID>
+      <Name>DIM ESTUDIANTE 2</Name>
+      <DimensionID>DIM ESTUDIANTE 2</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3f99362b-60b6-469a-9ae3-4b5891afcdf9">
+          <AttributeID>SK ESTUDIANTE</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="db28fe57-b7d8-475d-8be3-414f6f0d6ecb">
+      <ID>DIM PERIODO 2</ID>
+      <Name>DIM PERIODO 2</Name>
+      <DimensionID>DIM PERIODO 2</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="fa13e786-85c9-4b49-8248-96bba2def5e1">
+          <AttributeID>SK PERIODO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9e5ea247-bc1d-49ca-8b79-b03b23f3e854">
+      <ID>DIM TIEMPO 2</ID>
+      <Name>DIM TIEMPO 2</Name>
+      <DimensionID>DIM TIEMPO 2</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="db99249b-a6c2-4d49-800c-d2d321b9fb64">
+          <AttributeID>SK TIEMPO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="05e32ad4-48be-4daf-806b-d44aafb15978">
+      <ID>FACT MORA</ID>
+      <Name>FACT MORA</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="27a42a74-bf45-441b-9d9a-28d3f8658140">
+          <ID>ID ASIGNACION</ID>
+          <Name>ID ASIGNACION</Name>
+          <Source dwd:design-time-name="6c525d4a-5f6a-4735-8b39-0c4ddcaf33e1">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="80d88d8d-3223-48b3-9b91-4d7f5b29d812">
+              <TableID>DW_UMG_FACT_MORA</TableID>
+              <ColumnID>ID_ASIGNACION</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c7538406-a49c-465a-ab29-5f8c61f01cfb">
+          <ID>SALDO TOTAL CARGOS</ID>
+          <Name>SALDO TOTAL CARGOS</Name>
+          <Source dwd:design-time-name="8b96b9f0-6052-403c-9fbe-f7bd18b7c6c8">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9c1c1866-f010-4649-b896-b8630c9c6d37">
+              <TableID>DW_UMG_FACT_MORA</TableID>
+              <ColumnID>SALDO_TOTAL_CARGOS</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ba3dede4-8e1c-415b-b3cb-a59014e2e9df">
+          <ID>SALDO PENDIENTE</ID>
+          <Name>SALDO PENDIENTE</Name>
+          <Source dwd:design-time-name="393299fc-2fee-45cf-aec5-4373a0f50c9a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="41ddcdec-4bb1-431a-8ea4-357f542d6ca9">
+              <TableID>DW_UMG_FACT_MORA</TableID>
+              <ColumnID>SALDO_PENDIENTE</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2477b4f1-446b-4716-bcdc-848a7577b7d7">
+          <ID>MONTO MORA ACUM</ID>
+          <Name>MONTO MORA ACUM</Name>
+          <Source dwd:design-time-name="23b86725-303d-448d-af53-2235ca1b34c8">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="126ddc2a-c2d8-467e-9087-cfd1cafd7c3f">
+              <TableID>DW_UMG_FACT_MORA</TableID>
+              <ColumnID>MONTO_MORA_ACUM</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="59f52e92-24cd-4076-9586-266865abb253">
+          <ID>CANT MESES MORA</ID>
+          <Name>CANT MESES MORA</Name>
+          <Source dwd:design-time-name="d43d5b0b-efad-4f66-a071-b60ccb868732">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="48ae7973-2a02-4643-bbb6-cac4faf63c63">
+              <TableID>DW_UMG_FACT_MORA</TableID>
+              <ColumnID>CANT_MESES_MORA</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ade8a789-1d00-43e7-b00b-7befb893ecbd">
+          <ID>MONTO MULTAS EVAL</ID>
+          <Name>MONTO MULTAS EVAL</Name>
+          <Source dwd:design-time-name="1e3ad67c-8565-4ff5-a0ff-398ad7171157">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="99ad4494-b82e-4c47-b04b-ed2b6189faf9">
+              <TableID>DW_UMG_FACT_MORA</TableID>
+              <ColumnID>MONTO_MULTAS_EVAL</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4f57d04d-b1e2-4093-b5e3-ba68ad7fbd9e">
+          <ID>CANT MULTAS EVAL</ID>
+          <Name>CANT MULTAS EVAL</Name>
+          <Source dwd:design-time-name="a77edee7-53b1-42dd-8b56-e8a5dc746e6d">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d611e1ca-4c7a-4b05-8072-8a27b93d9b04">
+              <TableID>DW_UMG_FACT_MORA</TableID>
+              <ColumnID>CANT_MULTAS_EVAL</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b56ab8d5-b97e-4d32-975a-734d1d4647e2">
+          <ID>IND SOLVENTE</ID>
+          <Name>IND SOLVENTE</Name>
+          <Source dwd:design-time-name="00abde5c-c7d1-454a-b92c-a7e6bfa61ecd">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a6d5d6f9-bb1b-46b5-a3b3-fddec5b771c9">
+              <TableID>DW_UMG_FACT_MORA</TableID>
+              <ColumnID>IND_SOLVENTE</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="85c8d63d-ca43-4da1-9175-1cccce21c549">
+          <ID>IND MOROSO</ID>
+          <Name>IND MOROSO</Name>
+          <Source dwd:design-time-name="d4b2b18a-3f57-406f-89d7-658238839ee8">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="51555c6f-a548-4eae-be9e-17cd80be2ebb">
+              <TableID>DW_UMG_FACT_MORA</TableID>
+              <ColumnID>IND_MOROSO</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b51e8945-0cbc-4012-bc47-e763db8e302e">
+          <ID>IND ABANDONO INF</ID>
+          <Name>IND ABANDONO INF</Name>
+          <Source dwd:design-time-name="6e528611-54ef-4860-bdda-6bd1307b4428">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e0bfccf4-4afc-4181-8067-4275eb7f5fe8">
+              <TableID>DW_UMG_FACT_MORA</TableID>
+              <ColumnID>IND_ABANDONO_INF</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="decf58c7-fc71-4693-ab79-0f602bae2a34">
+          <ID>CANT ESTADOS</ID>
+          <Name>CANT ESTADOS</Name>
+          <Source dwd:design-time-name="defca298-23ae-4b25-bf92-148b4bac4620">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fda86500-8a1e-431b-ae41-f092e240b7b5">
+              <TableID>DW_UMG_FACT_MORA</TableID>
+              <ColumnID>CANT_ESTADOS</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4e30a7e9-7ce0-41f3-ace4-97560b5417f9">
+          <ID>Recuento FACT MORA</ID>
+          <Name>Recuento FACT MORA</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="d4e7fca0-e335-445d-9412-07d825ae7ba9">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="1f44ddc6-544f-47c9-9ea5-7e62c17b453e">
+              <TableID>DW_UMG_FACT_MORA</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="659442f7-a17f-4e26-b063-0d7e10eefd38">
+          <CubeDimensionID>DIM CATEDRATICO 2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="89ff27cf-fed2-4265-ab47-a306c6ab7f92">
+              <AttributeID>SK CATEDRATICO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4d46e6af-f263-4e58-a4de-739c4e46ee37">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6021a40e-ddf4-426f-b479-e62657d28c0d">
+                    <TableID>DW_UMG_FACT_MORA</TableID>
+                    <ColumnID>SK_CATEDRATICO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="346ede0e-f06e-491b-823e-4cb8c55e9e68">
+          <CubeDimensionID>DIM CURSO 2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1336069b-4b2f-4237-8b0f-8d32d2b0054d">
+              <AttributeID>SK CURSO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b346110e-95bc-4e8d-9fb8-d0a69134dbdc">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="110243e8-1071-4fcd-8fc7-c19c0f1812fb">
+                    <TableID>DW_UMG_FACT_MORA</TableID>
+                    <ColumnID>SK_CURSO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3418d0ca-0106-4c29-b370-20ab25077e7d">
+          <CubeDimensionID>DIM ESTUDIANTE 2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="232a0885-61a9-437b-9188-b3e8d1357bcb">
+              <AttributeID>SK ESTUDIANTE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b220e088-59b8-4ef4-b258-454a63ce6875">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1a7bf142-f564-40db-a8c7-d2a415f838e2">
+                    <TableID>DW_UMG_FACT_MORA</TableID>
+                    <ColumnID>SK_ESTUDIANTE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="aaa949d0-3517-445e-922c-fe325b2a2a6f">
+          <CubeDimensionID>DIM PERIODO 2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7513d25a-091b-4a88-8498-1ceb3d73f5de">
+              <AttributeID>SK PERIODO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2e669f17-bce8-468f-957c-285296e43670">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="57330292-a522-4d86-8935-2e5a9c618a4b">
+                    <TableID>DW_UMG_FACT_MORA</TableID>
+                    <ColumnID>SK_PERIODO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7d29c73f-2279-4393-b1c4-f912402772ac">
+          <CubeDimensionID>DIM TIEMPO 2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4e22416a-f8b0-4555-9405-36ab8de112a8">
+              <AttributeID>SK TIEMPO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fcf6b944-39df-47b9-b067-b3cd6095d7ff">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c94219d5-45c3-4617-a90d-d0f0f8da7fe7">
+                    <TableID>DW_UMG_FACT_MORA</TableID>
+                    <ColumnID>SK_TIEMPO_CORTE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="70a77d53-12e4-43fa-ac88-b95022d8a8e0">
+    <DataSourceViewID>Vista_Mora</DataSourceViewID>
+  </Source>
+</Cube>
